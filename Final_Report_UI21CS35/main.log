@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.19)  19 JUL 2026 18:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.19)  20 JUL 2026 00:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -864,7 +864,11 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
  (C:\Users\neera\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\neera\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count412
-) (main.aux (Formalities/title_page.aux) (Formalities/certificate.aux) (Formalities/certificate_of_approval.aux) (Formalities/acknowledgements.aux) (Formalities/abstract.aux) (Formalities/acronyms.aux) (Chapters/chap_1.aux) (Chapters/chap_2.aux) (Chapters/chap_3.aux) (Chapters/chap_4.aux) (Chapters/chap_5.aux) (Chapters/chap_6.aux) (Chapters/chap_7.aux) (references.aux))
+) (main.aux (Formalities/title_page.aux) (Formalities/certificate.aux) (Formalities/certificate_of_approval.aux) (Formalities/acknowledgements.aux) (Formalities/abstract.aux) (Formalities/acronyms.aux) (Chapters/chap_1.aux) (Chapters/chap_2.aux) (Chapters/chap_3.aux) (Chapters/chap_4.aux) (Chapters/chap_5.aux
+
+LaTeX Warning: Label `fig:prep_journey' multiply defined.
+
+) (Chapters/chap_6.aux) (references.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
@@ -961,7 +965,7 @@ Package babel Info: Main language set to 'english'.
 \openout2 = `./Formalities/title_page.aux'.
 
 (Formalities/title_page.tex
-<Formalities/IIIT_Surat_logo.jpg, id=322, 191.71625pt x 250.9375pt>
+<Formalities/IIIT_Surat_logo.jpg, id=614, 191.71625pt x 250.9375pt>
 File: Formalities/IIIT_Surat_logo.jpg Graphic file (type jpg)
 <use Formalities/IIIT_Surat_logo.jpg>
 Package pdftex.def Info: Formalities/IIIT_Surat_logo.jpg  used on input line 73.
@@ -1023,28 +1027,28 @@ Overfull \hbox (13.15967pt too wide) in paragraph at lines 27--28
 
 
 
-] [7])
+] [7] [8] [9])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [8]
+ [10]
 \openout2 = `./Formalities/acronyms.aux'.
 
- (Formalities/acronyms.tex [9
+ (Formalities/acronyms.tex [11
 
-]) (main.lof)
+]) (main.lof [12
+
+
+
+])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [10
-
-
-
-] (main.lot)
+ [13] (main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [11
+ [14
 
 ]
 \openout2 = `Chapters/chap_1.aux'.
@@ -1086,43 +1090,43 @@ Overfull \hbox (1.03815pt too wide) in paragraph at lines 35--60
  []
 
 [13] [14] [15]
-<Media/Chapter 3/1 Overall System Architecture.jpg, id=574, 3024.29875pt x 1092.08pt>
+<Media/Chapter 3/1 Overall System Architecture.jpg, id=1017, 3024.29875pt x 1092.08pt>
 File: Media/Chapter 3/1 Overall System Architecture.jpg Graphic file (type jpg)
 <use Media/Chapter 3/1 Overall System Architecture.jpg>
 Package pdftex.def Info: Media/Chapter 3/1 Overall System Architecture.jpg  used on input line 130.
 (pdftex.def)             Requested size: 434.90039pt x 157.03943pt.
  [16] [17 <./Media/Chapter 3/1 Overall System Architecture.jpg>]
-<Media/Chapter 3/13 Five-Layer Software Architecture.jpg, id=584, 3565.32pt x 1029.8475pt>
+<Media/Chapter 3/13 Five-Layer Software Architecture.jpg, id=1028, 3565.32pt x 1029.8475pt>
 File: Media/Chapter 3/13 Five-Layer Software Architecture.jpg Graphic file (type jpg)
 <use Media/Chapter 3/13 Five-Layer Software Architecture.jpg>
 Package pdftex.def Info: Media/Chapter 3/13 Five-Layer Software Architecture.jpg  used on input line 159.
 (pdftex.def)             Requested size: 434.90039pt x 125.6192pt.
  [18 <./Media/Chapter 3/13 Five-Layer Software Architecture.jpg>] [19]
-<Media/Chapter 3/3 High-Level Software Architecture (Client–Backend–Data–External).jpg, id=594, 2991.175pt x 3088.53876pt>
+<Media/Chapter 3/3 High-Level Software Architecture (Client–Backend–Data–External).jpg, id=1038, 2991.175pt x 3088.53876pt>
 File: Media/Chapter 3/3 High-Level Software Architecture (Client–Backend–Data–External).jpg Graphic file (type jpg)
 <use Media/Chapter 3/3 High-Level Software Architecture (Client–Backend–Data–External).jpg>
 Package pdftex.def Info: Media/Chapter 3/3 High-Level Software Architecture (Client–Backend–Data–External).jpg  used on input line 207.
 (pdftex.def)             Requested size: 434.90039pt x 449.0284pt.
  [20] [21 <./Media/Chapter 3/3 High-Level Software Architecture (Client–Backend–Data–External).jpg>] [22]
-<Media/Chapter 3/5 Use Case Diagram.jpg, id=609, 1107.13625pt x 3111.625pt>
+<Media/Chapter 3/5 Use Case Diagram.jpg, id=1052, 1107.13625pt x 3111.625pt>
 File: Media/Chapter 3/5 Use Case Diagram.jpg Graphic file (type jpg)
 <use Media/Chapter 3/5 Use Case Diagram.jpg>
 Package pdftex.def Info: Media/Chapter 3/5 Use Case Diagram.jpg  used on input line 255.
 (pdftex.def)             Requested size: 217.4502pt x 611.10883pt.
  [23] [24 <./Media/Chapter 3/5 Use Case Diagram.jpg>] [25]
-<Media/Chapter 3/8 Data Flow Diagram (Level 0).jpg, id=623, 2787.41376pt x 846.16125pt>
+<Media/Chapter 3/8 Data Flow Diagram (Level 0).jpg, id=1067, 2787.41376pt x 846.16125pt>
 File: Media/Chapter 3/8 Data Flow Diagram (Level 0).jpg Graphic file (type jpg)
 <use Media/Chapter 3/8 Data Flow Diagram (Level 0).jpg>
 Package pdftex.def Info: Media/Chapter 3/8 Data Flow Diagram (Level 0).jpg  used on input line 314.
 (pdftex.def)             Requested size: 434.90039pt x 132.01869pt.
  [26 <./Media/Chapter 3/8 Data Flow Diagram (Level 0).jpg>] [27]
-<Media/Chapter 3/6 Class Diagram.jpg, id=637, 4780.86125pt x 2015.53pt>
+<Media/Chapter 3/6 Class Diagram.jpg, id=1080, 4780.86125pt x 2015.53pt>
 File: Media/Chapter 3/6 Class Diagram.jpg Graphic file (type jpg)
 <use Media/Chapter 3/6 Class Diagram.jpg>
 Package pdftex.def Info: Media/Chapter 3/6 Class Diagram.jpg  used on input line 369.
 (pdftex.def)             Requested size: 434.90039pt x 183.32741pt.
  [28] [29 <./Media/Chapter 3/6 Class Diagram.jpg>] [30]
-<Media/Chapter 3/4 Entity Relationship Diagram (ERD).jpg, id=656, 14723.005pt x 1314.9125pt>
+<Media/Chapter 3/4 Entity Relationship Diagram (ERD).jpg, id=1100, 14723.005pt x 1314.9125pt>
 File: Media/Chapter 3/4 Entity Relationship Diagram (ERD).jpg Graphic file (type jpg)
 <use Media/Chapter 3/4 Entity Relationship Diagram (ERD).jpg>
 Package pdftex.def Info: Media/Chapter 3/4 Entity Relationship Diagram (ERD).jpg  used on input line 425.
@@ -1153,7 +1157,7 @@ Overfull \hbox (29.4909pt too wide) in paragraph at lines 96--144
  []
 
 [37] [38]
-<Media/Chapter 4/2 React Component Architecture.jpg, id=694, 1685.29625pt x 1650.165pt>
+<Media/Chapter 4/2 React Component Architecture.jpg, id=1137, 1685.29625pt x 1650.165pt>
 File: Media/Chapter 4/2 React Component Architecture.jpg Graphic file (type jpg)
 <use Media/Chapter 4/2 React Component Architecture.jpg>
 Package pdftex.def Info: Media/Chapter 4/2 React Component Architecture.jpg  used on input line 164.
@@ -1164,84 +1168,307 @@ Overfull \hbox (3.63814pt too wide) in paragraph at lines 173--174
  []
 
 [40]
-<Media/Chapter 4/7 API Request Flow.jpg, id=704, 3046.38126pt x 502.87875pt>
+<Media/Chapter 4/7 API Request Flow.jpg, id=1147, 3046.38126pt x 502.87875pt>
 File: Media/Chapter 4/7 API Request Flow.jpg Graphic file (type jpg)
 <use Media/Chapter 4/7 API Request Flow.jpg>
 Package pdftex.def Info: Media/Chapter 4/7 API Request Flow.jpg  used on input line 219.
 (pdftex.def)             Requested size: 434.90039pt x 71.79141pt.
  [41 <./Media/Chapter 4/7 API Request Flow.jpg>] [42]
-<Media/Chapter 4/9 Authentication Sequence.jpg, id=722, 3189.9175pt x 2507.3675pt>
+<Media/Chapter 4/9 Authentication Sequence.jpg, id=1166, 3189.9175pt x 2507.3675pt>
 File: Media/Chapter 4/9 Authentication Sequence.jpg Graphic file (type jpg)
 <use Media/Chapter 4/9 Authentication Sequence.jpg>
 Package pdftex.def Info: Media/Chapter 4/9 Authentication Sequence.jpg  used on input line 290.
 (pdftex.def)             Requested size: 360.96811pt x 283.73096pt.
  [43 <./Media/Chapter 4/9 Authentication Sequence.jpg>] [44] [45]
-<Media/Chapter 4/11 Preparation Journey Workflow.jpg, id=746, 3872.4675pt x 489.83pt>
+<Media/Chapter 4/11 Preparation Journey Workflow.jpg, id=1189, 3872.4675pt x 489.83pt>
 File: Media/Chapter 4/11 Preparation Journey Workflow.jpg Graphic file (type jpg)
 <use Media/Chapter 4/11 Preparation Journey Workflow.jpg>
 Package pdftex.def Info: Media/Chapter 4/11 Preparation Journey Workflow.jpg  used on input line 383.
 (pdftex.def)             Requested size: 434.90039pt x 55.01006pt.
- [46 <./Media/Chapter 4/11 Preparation Journey Workflow.jpg>] [47]) [48]
+ [46 <./Media/Chapter 4/11 Preparation Journey Workflow.jpg>] [47]
+<Media/Chapter 4/12 Dashboard Workflow.jpg, id=1210, 4269.9525pt x 2282.5275pt>
+File: Media/Chapter 4/12 Dashboard Workflow.jpg Graphic file (type jpg)
+<use Media/Chapter 4/12 Dashboard Workflow.jpg>
+Package pdftex.def Info: Media/Chapter 4/12 Dashboard Workflow.jpg  used on input line 476.
+(pdftex.def)             Requested size: 434.90039pt x 232.44554pt.
+ [48 <./Media/Chapter 4/12 Dashboard Workflow.jpg>] [49]
+<Media/Chapter 4/14 Mock Test Workflow.jpg, id=1220, 3871.46375pt x 2011.515pt>
+File: Media/Chapter 4/14 Mock Test Workflow.jpg Graphic file (type jpg)
+<use Media/Chapter 4/14 Mock Test Workflow.jpg>
+Package pdftex.def Info: Media/Chapter 4/14 Mock Test Workflow.jpg  used on input line 545.
+(pdftex.def)             Requested size: 434.90039pt x 225.9634pt.
+ [50 <./Media/Chapter 4/14 Mock Test Workflow.jpg>] [51]
+<Media/Chapter 4/15 AI Interview Workflow.jpg, id=1240, 5429.28375pt x 3161.8125pt>
+File: Media/Chapter 4/15 AI Interview Workflow.jpg Graphic file (type jpg)
+<use Media/Chapter 4/15 AI Interview Workflow.jpg>
+Package pdftex.def Info: Media/Chapter 4/15 AI Interview Workflow.jpg  used on input line 640.
+(pdftex.def)             Requested size: 434.90039pt x 253.23964pt.
+ [52] [53 <./Media/Chapter 4/15 AI Interview Workflow.jpg>] [54]
+<Media/Chapter 4/16 Coding Execution Workflow.jpg, id=1265, 5399.17125pt x 2559.5625pt>
+File: Media/Chapter 4/16 Coding Execution Workflow.jpg Graphic file (type jpg)
+<use Media/Chapter 4/16 Coding Execution Workflow.jpg>
+Package pdftex.def Info: Media/Chapter 4/16 Coding Execution Workflow.jpg  used on input line 735.
+(pdftex.def)             Requested size: 434.90039pt x 206.13614pt.
+ [55 <./Media/Chapter 4/16 Coding Execution Workflow.jpg>] [56] [57]
+<Media/Chapter 4/17 Portfolio Workflow.jpg, id=1289, 3954.775pt x 2429.075pt>
+File: Media/Chapter 4/17 Portfolio Workflow.jpg Graphic file (type jpg)
+<use Media/Chapter 4/17 Portfolio Workflow.jpg>
+Package pdftex.def Info: Media/Chapter 4/17 Portfolio Workflow.jpg  used on input line 832.
+(pdftex.def)             Requested size: 434.90039pt x 267.08788pt.
+ [58 <./Media/Chapter 4/17 Portfolio Workflow.jpg>] [59]
+<Media/Chapter 4/18 Company Readiness Workflow.jpg, id=1308, 2230.3325pt x 1024.82875pt>
+File: Media/Chapter 4/18 Company Readiness Workflow.jpg Graphic file (type jpg)
+<use Media/Chapter 4/18 Company Readiness Workflow.jpg>
+Package pdftex.def Info: Media/Chapter 4/18 Company Readiness Workflow.jpg  used on input line 925.
+(pdftex.def)             Requested size: 434.90039pt x 199.83298pt.
+ [60] [61 <./Media/Chapter 4/18 Company Readiness Workflow.jpg>] [62]) [63]
 \openout2 = `Chapters/chap_5.aux'.
 
- (Chapters/chap_5.tex)
+ (Chapters/chap_5.tex
+Chapter 5.
+<Media/Chapter 5/landing.png, id=1333, 2027.575pt x 8403.395pt>
+File: Media/Chapter 5/landing.png Graphic file (type png)
+<use Media/Chapter 5/landing.png>
+Package pdftex.def Info: Media/Chapter 5/landing.png  used on input line 19.
+(pdftex.def)             Requested size: 304.42894pt x 1261.60893pt.
+[64
+
+
+
+
+]
+Overfull \vbox (585.60205pt too high) has occurred while \output is active []
+
+ [65 <./Media/Chapter 5/landing.png (PNG copy)>] [66]
+<Media/Chapter 5/login.png, id=1348, 1927.2pt x 1445.4pt>
+File: Media/Chapter 5/login.png Graphic file (type png)
+<use Media/Chapter 5/login.png>
+Package pdftex.def Info: Media/Chapter 5/login.png  used on input line 80.
+(pdftex.def)             Requested size: 434.90039pt x 326.17139pt.
+ [67 <./Media/Chapter 5/login.png (PNG copy)>]
+<Media/Chapter 5/signup.png, id=1354, 1927.2pt x 1445.4pt>
+File: Media/Chapter 5/signup.png Graphic file (type png)
+<use Media/Chapter 5/signup.png>
+Package pdftex.def Info: Media/Chapter 5/signup.png  used on input line 115.
+(pdftex.def)             Requested size: 434.90039pt x 326.17139pt.
+ [68] [69 <./Media/Chapter 5/signup.png (PNG copy)>]
+<Media/Chapter 5/dashboard.png, id=1364, 1927.2pt x 3208.98875pt>
+File: Media/Chapter 5/dashboard.png Graphic file (type png)
+<use Media/Chapter 5/dashboard.png>
+Package pdftex.def Info: Media/Chapter 5/dashboard.png  used on input line 152.
+(pdftex.def)             Requested size: 413.15404pt x 687.91158pt.
+ [70]
+Overfull \vbox (11.9047pt too high) has occurred while \output is active []
+
+ [71 <./Media/Chapter 5/dashboard.png (PNG copy)>] [72] [73]
+<Media/Chapter 5/prep_journey.png, id=1383, 1927.2pt x 1524.69624pt>
+File: Media/Chapter 5/prep_journey.png Graphic file (type png)
+<use Media/Chapter 5/prep_journey.png>
+Package pdftex.def Info: Media/Chapter 5/prep_journey.png  used on input line 251.
+(pdftex.def)             Requested size: 413.15404pt x 326.84944pt.
+ [74 <./Media/Chapter 5/prep_journey.png (PNG copy)>]
+<Media/Chapter 5/roadmaps.png, id=1389, 1927.2pt x 1450.41875pt>
+File: Media/Chapter 5/roadmaps.png Graphic file (type png)
+<use Media/Chapter 5/roadmaps.png>
+Package pdftex.def Info: Media/Chapter 5/roadmaps.png  used on input line 286.
+(pdftex.def)             Requested size: 413.15404pt x 310.92656pt.
+ [75] [76 <./Media/Chapter 5/roadmaps.png (PNG copy)>]
+<Media/Chapter 5/milestones.png, id=1399, 1927.2pt x 1445.4pt>
+File: Media/Chapter 5/milestones.png Graphic file (type png)
+<use Media/Chapter 5/milestones.png>
+Package pdftex.def Info: Media/Chapter 5/milestones.png  used on input line 321.
+(pdftex.def)             Requested size: 413.15404pt x 309.8507pt.
+ [77 <./Media/Chapter 5/milestones.png (PNG copy)>]
+<Media/Chapter 5/topic_study.png, id=1406, 1927.2pt x 1758.57pt>
+File: Media/Chapter 5/topic_study.png Graphic file (type png)
+<use Media/Chapter 5/topic_study.png>
+Package pdftex.def Info: Media/Chapter 5/topic_study.png  used on input line 356.
+(pdftex.def)             Requested size: 413.15404pt x 376.98502pt.
+ [78 <./Media/Chapter 5/topic_study.png (PNG copy)>]
+<Media/Chapter 5/problem_arena.png, id=1412, 1927.2pt x 2625.81pt>
+File: Media/Chapter 5/problem_arena.png Graphic file (type png)
+<use Media/Chapter 5/problem_arena.png>
+Package pdftex.def Info: Media/Chapter 5/problem_arena.png  used on input line 397.
+(pdftex.def)             Requested size: 413.15404pt x 562.89543pt.
+ [79] [80 <./Media/Chapter 5/problem_arena.png (PNG copy)>]
+<Media/Chapter 5/coding_workspace.png, id=1422, 1927.2pt x 1445.4pt>
+File: Media/Chapter 5/coding_workspace.png Graphic file (type png)
+<use Media/Chapter 5/coding_workspace.png>
+Package pdftex.def Info: Media/Chapter 5/coding_workspace.png  used on input line 432.
+(pdftex.def)             Requested size: 413.15404pt x 309.8507pt.
+ [81] [82 <./Media/Chapter 5/coding_workspace.png (PNG copy)>]
+<Media/Chapter 5/standalone_workspace.png, id=1432, 1927.2pt x 1574.88374pt>
+File: Media/Chapter 5/standalone_workspace.png Graphic file (type png)
+<use Media/Chapter 5/standalone_workspace.png>
+Package pdftex.def Info: Media/Chapter 5/standalone_workspace.png  used on input line 467.
+(pdftex.def)             Requested size: 413.15404pt x 337.60814pt.
+ [83 <./Media/Chapter 5/standalone_workspace.png (PNG copy)>]
+<Media/Chapter 5/contest_hub.png, id=1439, 1927.2pt x 1445.4pt>
+File: Media/Chapter 5/contest_hub.png Graphic file (type png)
+<use Media/Chapter 5/contest_hub.png>
+Package pdftex.def Info: Media/Chapter 5/contest_hub.png  used on input line 500.
+(pdftex.def)             Requested size: 413.15404pt x 309.8507pt.
+ [84 <./Media/Chapter 5/contest_hub.png (PNG copy)>]
+<Media/Chapter 5/ai_interview.png, id=1445, 1927.2pt x 1495.5875pt>
+File: Media/Chapter 5/ai_interview.png Graphic file (type png)
+<use Media/Chapter 5/ai_interview.png>
+Package pdftex.def Info: Media/Chapter 5/ai_interview.png  used on input line 535.
+(pdftex.def)             Requested size: 413.15404pt x 320.60939pt.
+ [85] [86 <./Media/Chapter 5/ai_interview.png (PNG copy)>]
+<Media/Chapter 5/companies.png, id=1455, 1927.2pt x 1445.4pt>
+File: Media/Chapter 5/companies.png Graphic file (type png)
+<use Media/Chapter 5/companies.png>
+Package pdftex.def Info: Media/Chapter 5/companies.png  used on input line 576.
+(pdftex.def)             Requested size: 413.15404pt x 309.8507pt.
+ [87 <./Media/Chapter 5/companies.png (PNG copy)>]
+<Media/Chapter 5/company_detail.png, id=1461, 1927.2pt x 1445.4pt>
+File: Media/Chapter 5/company_detail.png Graphic file (type png)
+<use Media/Chapter 5/company_detail.png>
+Package pdftex.def Info: Media/Chapter 5/company_detail.png  used on input line 607.
+(pdftex.def)             Requested size: 413.15404pt x 309.8507pt.
+
+Overfull \hbox (1.10297pt too wide) in paragraph at lines 612--613
+[]\OT1/cmr/m/n/12 Figure []5.15[] il-lus-trates the Com-pany De-tails in-ter-face. This page presents company-
+ []
+
+[88 <./Media/Chapter 5/company_detail.png (PNG copy)>]
+<Media/Chapter 5/profile_editor.png, id=1467, 1927.2pt x 1637.11626pt>
+File: Media/Chapter 5/profile_editor.png Graphic file (type png)
+<use Media/Chapter 5/profile_editor.png>
+Package pdftex.def Info: Media/Chapter 5/profile_editor.png  used on input line 646.
+(pdftex.def)             Requested size: 413.15404pt x 350.94894pt.
+ [89] [90 <./Media/Chapter 5/profile_editor.png (PNG copy)>]
+<Media/Chapter 5/skills_passport.png, id=1478, 1927.2pt x 1445.4pt>
+File: Media/Chapter 5/skills_passport.png Graphic file (type png)
+<use Media/Chapter 5/skills_passport.png>
+Package pdftex.def Info: Media/Chapter 5/skills_passport.png  used on input line 681.
+(pdftex.def)             Requested size: 413.15404pt x 309.8507pt.
+ [91 <./Media/Chapter 5/skills_passport.png (PNG copy)>]
+<Media/Chapter 5/shared_passport.png, id=1484, 1445.4pt x 750.55406pt>
+File: Media/Chapter 5/shared_passport.png Graphic file (type png)
+<use Media/Chapter 5/shared_passport.png>
+Package pdftex.def Info: Media/Chapter 5/shared_passport.png  used on input line 720.
+(pdftex.def)             Requested size: 413.15404pt x 214.54001pt.
+ [92 <./Media/Chapter 5/shared_passport.png>]
+<Media/Chapter 5/shared_portfolio.png, id=1492, 1927.2pt x 1445.4pt>
+File: Media/Chapter 5/shared_portfolio.png Graphic file (type png)
+<use Media/Chapter 5/shared_portfolio.png>
+Package pdftex.def Info: Media/Chapter 5/shared_portfolio.png  used on input line 735.
+(pdftex.def)             Requested size: 413.15404pt x 309.8507pt.
+ [93 <./Media/Chapter 5/shared_portfolio.png (PNG copy)>]
+<Media/Chapter 5/analytics.png, id=1498, 1927.2pt x 1879.02pt>
+File: Media/Chapter 5/analytics.png Graphic file (type png)
+<use Media/Chapter 5/analytics.png>
+Package pdftex.def Info: Media/Chapter 5/analytics.png  used on input line 770.
+(pdftex.def)             Requested size: 413.15404pt x 402.8059pt.
+ [94]
+Overfull \hbox (8.52695pt too wide) in paragraph at lines 779--780
+[]\OT1/cmr/m/n/12 Since the dis-played in-for-ma-tion is gen-er-ated dy-nam-i-cally from the back-end database,
+ []
+
+[95 <./Media/Chapter 5/analytics.png (PNG copy)>]
+<Media/Chapter 5/settings.png, id=1509, 1927.2pt x 1445.4pt>
+File: Media/Chapter 5/settings.png Graphic file (type png)
+<use Media/Chapter 5/settings.png>
+Package pdftex.def Info: Media/Chapter 5/settings.png  used on input line 805.
+(pdftex.def)             Requested size: 413.15404pt x 309.8507pt.
+ [96 <./Media/Chapter 5/settings.png (PNG copy)>]
+<Media/Chapter 5/admin_users.png, id=1515, 1927.2pt x 1445.4pt>
+File: Media/Chapter 5/admin_users.png Graphic file (type png)
+<use Media/Chapter 5/admin_users.png>
+Package pdftex.def Info: Media/Chapter 5/admin_users.png  used on input line 838.
+(pdftex.def)             Requested size: 391.40768pt x 293.55205pt.
+ [97 <./Media/Chapter 5/admin_users.png (PNG copy)>]
+<Media/Chapter 5/admin_tracks.png, id=1520, 1927.2pt x 1445.4pt>
+File: Media/Chapter 5/admin_tracks.png Graphic file (type png)
+<use Media/Chapter 5/admin_tracks.png>
+Package pdftex.def Info: Media/Chapter 5/admin_tracks.png  used on input line 849.
+(pdftex.def)             Requested size: 391.40768pt x 293.55205pt.
+<Media/Chapter 5/admin_topics.png, id=1521, 1445.4pt x 1448.41125pt>
+File: Media/Chapter 5/admin_topics.png Graphic file (type png)
+<use Media/Chapter 5/admin_topics.png>
+Package pdftex.def Info: Media/Chapter 5/admin_topics.png  used on input line 860.
+(pdftex.def)             Requested size: 391.40768pt x 392.22551pt.
+ [98 <./Media/Chapter 5/admin_tracks.png (PNG copy)>]
+<Media/Chapter 5/admin_questions.png, id=1526, 1444.64719pt x 1411.52344pt>
+File: Media/Chapter 5/admin_questions.png Graphic file (type png)
+<use Media/Chapter 5/admin_questions.png>
+Package pdftex.def Info: Media/Chapter 5/admin_questions.png  used on input line 871.
+(pdftex.def)             Requested size: 391.40768pt x 382.43025pt.
+ [99 <./Media/Chapter 5/admin_topics.png>]
+<Media/Chapter 5/admin_tests.png, id=1532, 1927.2pt x 1445.4pt>
+File: Media/Chapter 5/admin_tests.png Graphic file (type png)
+<use Media/Chapter 5/admin_tests.png>
+Package pdftex.def Info: Media/Chapter 5/admin_tests.png  used on input line 882.
+(pdftex.def)             Requested size: 391.40768pt x 293.55205pt.
+ [100 <./Media/Chapter 5/admin_questions.png>]
+<Media/Chapter 5/admin_companies.png, id=1538, 1927.2pt x 1445.4pt>
+File: Media/Chapter 5/admin_companies.png Graphic file (type png)
+<use Media/Chapter 5/admin_companies.png>
+Package pdftex.def Info: Media/Chapter 5/admin_companies.png  used on input line 893.
+(pdftex.def)             Requested size: 391.40768pt x 293.55205pt.
+ [101 <./Media/Chapter 5/admin_tests.png (PNG copy)>] [102 <./Media/Chapter 5/admin_companies.png (PNG copy)>]) [103]
 \openout2 = `Chapters/chap_6.aux'.
 
- (Chapters/chap_6.tex)
-\openout2 = `Chapters/chap_7.aux'.
+ (Chapters/chap_6.tex
+Chapter 6.
+[104
 
- (Chapters/chap_7.tex)
+
+
+
+] [105] [106]) [107]
 \openout2 = `references.aux'.
 
  (references.tex
-Underfull \hbox (badness 1701) in paragraph at lines 7--8
-[]\OT1/cmr/m/n/12 Django Doc-u-men-ta-tion, Django Soft-ware Foun-da-tion. [On-line]. Avail-able:
+Underfull \hbox (badness 1983) in paragraph at lines 7--8
+[]\OT1/cmr/m/n/12 Django Soft-ware Foun-da-tion, \OT1/cmr/m/it/12 Django Doc-u-men-ta-tion\OT1/cmr/m/n/12 . [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 6348) in paragraph at lines 28--29
-[]\OT1/cmr/m/n/12 Stack Over-flow De-vel-oper Com-mu-nity. [On-line]. Avail-able: []$\OT1/cmtt/m/n/12 https : / /
+Underfull \hbox (badness 1859) in paragraph at lines 13--14
+[]\OT1/cmr/m/n/12 Python Soft-ware Foun-da-tion, \OT1/cmr/m/it/12 Python Doc-u-men-ta-tion\OT1/cmr/m/n/12 . [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 31--32
-[]\OT1/cmr/m/n/12 Postman API Doc-u-men-ta-tion. [On-line]. Avail-able: []$\OT1/cmtt/m/n/12 https : / / learning .
+Underfull \hbox (badness 1924) in paragraph at lines 25--26
+[]\OT1/cmr/m/n/12 Postman Inc., \OT1/cmr/m/it/12 Post-man Learn-ing Cen-ter\OT1/cmr/m/n/12 . [On-line]. Avail-able: []$\OT1/cmtt/m/n/12 https : / /
  []
 
-[49
+
+Underfull \hbox (badness 5105) in paragraph at lines 40--41
+[]\OT1/cmr/m/n/12 Stack Over-flow, \OT1/cmr/m/it/12 De-vel-oper Com-mu-nity\OT1/cmr/m/n/12 . [On-line]. Avail-able: []$\OT1/cmtt/m/n/12 https : / /
+ []
+
+[108
 
 
 
 
-
-
-
-
-
-
-
-
-
-]) [50] (main.aux (Formalities/title_page.aux) (Formalities/certificate.aux) (Formalities/certificate_of_approval.aux) (Formalities/acknowledgements.aux) (Formalities/abstract.aux) (Formalities/acronyms.aux) (Chapters/chap_1.aux) (Chapters/chap_2.aux) (Chapters/chap_3.aux) (Chapters/chap_4.aux) (Chapters/chap_5.aux) (Chapters/chap_6.aux) (Chapters/chap_7.aux) (references.aux))
+]) [109] (main.aux (Formalities/title_page.aux) (Formalities/certificate.aux) (Formalities/certificate_of_approval.aux) (Formalities/acknowledgements.aux) (Formalities/abstract.aux) (Formalities/acronyms.aux) (Chapters/chap_1.aux) (Chapters/chap_2.aux) (Chapters/chap_3.aux) (Chapters/chap_4.aux) (Chapters/chap_5.aux) (Chapters/chap_6.aux) (references.aux))
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 998B7799B62AA34B8B2C0692FD255802;12997.
+(rerunfilecheck)             Checksum: 4FF0835EDDD3F3A654A812C83B6A0DC8;24850.
  ) 
 Here is how much of TeX's memory you used:
- 29749 strings out of 467510
- 568918 string characters out of 5408794
- 994220 words of memory out of 5000000
- 58130 multiletter control sequences out of 15000+600000
+ 30284 strings out of 467510
+ 581725 string characters out of 5408794
+ 995460 words of memory out of 5000000
+ 58453 multiletter control sequences out of 15000+600000
  636641 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,108p,1078b,652s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\neera\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/neera/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/neera/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/neera/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/neera/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/neera/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/neera/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/neera/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (61 pages, 4107946 bytes).
+Output written on main.pdf (123 pages, 16394791 bytes).
 PDF statistics:
- 906 PDF objects out of 1000 (max. 8388607)
- 228 named destinations out of 1000 (max. 500000)
- 705 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1755 PDF objects out of 2073 (max. 8388607)
+ 447 named destinations out of 1000 (max. 500000)
+ 1454 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -357,9 +357,6 @@ INPUT Chapters\chap_5.aux
 INPUT .\Chapters\chap_6.aux
 INPUT .\Chapters\chap_6.aux
 INPUT Chapters\chap_6.aux
-INPUT .\Chapters\chap_7.aux
-INPUT .\Chapters\chap_7.aux
-INPUT Chapters\chap_7.aux
 INPUT .\references.aux
 INPUT .\references.aux
 INPUT references.aux
@@ -575,24 +572,249 @@ INPUT .\Media\Chapter 4\11 Preparation Journey Workflow.jpg
 INPUT .\Media\Chapter 4\11 Preparation Journey Workflow.jpg
 INPUT .\Media\Chapter 4\11 Preparation Journey Workflow.jpg
 INPUT .\Media\Chapter 4\11 Preparation Journey Workflow.jpg
+INPUT .\Media\Chapter 4\12 Dashboard Workflow.jpg
+INPUT .\Media\Chapter 4\12 Dashboard Workflow.jpg
+INPUT .\Media\Chapter 4\12 Dashboard Workflow.jpg
+INPUT .\Media\Chapter 4\12 Dashboard Workflow.jpg
+INPUT .\Media\Chapter 4\12 Dashboard Workflow.jpg
+INPUT .\Media\Chapter 4\12 Dashboard Workflow.jpg
+INPUT .\Media\Chapter 4\12 Dashboard Workflow.jpg
+INPUT .\Media\Chapter 4\14 Mock Test Workflow.jpg
+INPUT .\Media\Chapter 4\14 Mock Test Workflow.jpg
+INPUT .\Media\Chapter 4\14 Mock Test Workflow.jpg
+INPUT .\Media\Chapter 4\14 Mock Test Workflow.jpg
+INPUT .\Media\Chapter 4\14 Mock Test Workflow.jpg
+INPUT .\Media\Chapter 4\14 Mock Test Workflow.jpg
+INPUT .\Media\Chapter 4\14 Mock Test Workflow.jpg
+INPUT .\Media\Chapter 4\15 AI Interview Workflow.jpg
+INPUT .\Media\Chapter 4\15 AI Interview Workflow.jpg
+INPUT .\Media\Chapter 4\15 AI Interview Workflow.jpg
+INPUT .\Media\Chapter 4\15 AI Interview Workflow.jpg
+INPUT .\Media\Chapter 4\15 AI Interview Workflow.jpg
+INPUT .\Media\Chapter 4\15 AI Interview Workflow.jpg
+INPUT .\Media\Chapter 4\15 AI Interview Workflow.jpg
+INPUT .\Media\Chapter 4\16 Coding Execution Workflow.jpg
+INPUT .\Media\Chapter 4\16 Coding Execution Workflow.jpg
+INPUT .\Media\Chapter 4\16 Coding Execution Workflow.jpg
+INPUT .\Media\Chapter 4\16 Coding Execution Workflow.jpg
+INPUT .\Media\Chapter 4\16 Coding Execution Workflow.jpg
+INPUT .\Media\Chapter 4\16 Coding Execution Workflow.jpg
+INPUT .\Media\Chapter 4\16 Coding Execution Workflow.jpg
+INPUT .\Media\Chapter 4\17 Portfolio Workflow.jpg
+INPUT .\Media\Chapter 4\17 Portfolio Workflow.jpg
+INPUT .\Media\Chapter 4\17 Portfolio Workflow.jpg
+INPUT .\Media\Chapter 4\17 Portfolio Workflow.jpg
+INPUT .\Media\Chapter 4\17 Portfolio Workflow.jpg
+INPUT .\Media\Chapter 4\17 Portfolio Workflow.jpg
+INPUT .\Media\Chapter 4\17 Portfolio Workflow.jpg
+INPUT .\Media\Chapter 4\18 Company Readiness Workflow.jpg
+INPUT .\Media\Chapter 4\18 Company Readiness Workflow.jpg
+INPUT .\Media\Chapter 4\18 Company Readiness Workflow.jpg
+INPUT .\Media\Chapter 4\18 Company Readiness Workflow.jpg
+INPUT .\Media\Chapter 4\18 Company Readiness Workflow.jpg
+INPUT .\Media\Chapter 4\18 Company Readiness Workflow.jpg
+INPUT .\Media\Chapter 4\18 Company Readiness Workflow.jpg
 INPUT .\Chapters\chap_5.tex
 INPUT .\Chapters\chap_5.tex
 OUTPUT Chapters\chap_5.aux
 INPUT .\Chapters\chap_5.tex
 INPUT .\Chapters\chap_5.tex
 INPUT Chapters\chap_5.tex
+INPUT .\Media\Chapter 5\landing.png
+INPUT .\Media\Chapter 5\landing.png
+INPUT .\Media\Chapter 5\landing.png
+INPUT .\Media\Chapter 5\landing.png
+INPUT .\Media\Chapter 5\landing.png
+INPUT .\Media\Chapter 5\landing.png
+INPUT .\Media\Chapter 5\landing.png
+INPUT .\Media\Chapter 5\login.png
+INPUT .\Media\Chapter 5\login.png
+INPUT .\Media\Chapter 5\login.png
+INPUT .\Media\Chapter 5\login.png
+INPUT .\Media\Chapter 5\login.png
+INPUT .\Media\Chapter 5\login.png
+INPUT .\Media\Chapter 5\login.png
+INPUT .\Media\Chapter 5\signup.png
+INPUT .\Media\Chapter 5\signup.png
+INPUT .\Media\Chapter 5\signup.png
+INPUT .\Media\Chapter 5\signup.png
+INPUT .\Media\Chapter 5\signup.png
+INPUT .\Media\Chapter 5\signup.png
+INPUT .\Media\Chapter 5\signup.png
+INPUT .\Media\Chapter 5\dashboard.png
+INPUT .\Media\Chapter 5\dashboard.png
+INPUT .\Media\Chapter 5\dashboard.png
+INPUT .\Media\Chapter 5\dashboard.png
+INPUT .\Media\Chapter 5\dashboard.png
+INPUT .\Media\Chapter 5\dashboard.png
+INPUT .\Media\Chapter 5\dashboard.png
+INPUT .\Media\Chapter 5\prep_journey.png
+INPUT .\Media\Chapter 5\prep_journey.png
+INPUT .\Media\Chapter 5\prep_journey.png
+INPUT .\Media\Chapter 5\prep_journey.png
+INPUT .\Media\Chapter 5\prep_journey.png
+INPUT .\Media\Chapter 5\prep_journey.png
+INPUT .\Media\Chapter 5\prep_journey.png
+INPUT .\Media\Chapter 5\roadmaps.png
+INPUT .\Media\Chapter 5\roadmaps.png
+INPUT .\Media\Chapter 5\roadmaps.png
+INPUT .\Media\Chapter 5\roadmaps.png
+INPUT .\Media\Chapter 5\roadmaps.png
+INPUT .\Media\Chapter 5\roadmaps.png
+INPUT .\Media\Chapter 5\roadmaps.png
+INPUT .\Media\Chapter 5\milestones.png
+INPUT .\Media\Chapter 5\milestones.png
+INPUT .\Media\Chapter 5\milestones.png
+INPUT .\Media\Chapter 5\milestones.png
+INPUT .\Media\Chapter 5\milestones.png
+INPUT .\Media\Chapter 5\milestones.png
+INPUT .\Media\Chapter 5\milestones.png
+INPUT .\Media\Chapter 5\topic_study.png
+INPUT .\Media\Chapter 5\topic_study.png
+INPUT .\Media\Chapter 5\topic_study.png
+INPUT .\Media\Chapter 5\topic_study.png
+INPUT .\Media\Chapter 5\topic_study.png
+INPUT .\Media\Chapter 5\topic_study.png
+INPUT .\Media\Chapter 5\topic_study.png
+INPUT .\Media\Chapter 5\problem_arena.png
+INPUT .\Media\Chapter 5\problem_arena.png
+INPUT .\Media\Chapter 5\problem_arena.png
+INPUT .\Media\Chapter 5\problem_arena.png
+INPUT .\Media\Chapter 5\problem_arena.png
+INPUT .\Media\Chapter 5\problem_arena.png
+INPUT .\Media\Chapter 5\problem_arena.png
+INPUT .\Media\Chapter 5\coding_workspace.png
+INPUT .\Media\Chapter 5\coding_workspace.png
+INPUT .\Media\Chapter 5\coding_workspace.png
+INPUT .\Media\Chapter 5\coding_workspace.png
+INPUT .\Media\Chapter 5\coding_workspace.png
+INPUT .\Media\Chapter 5\coding_workspace.png
+INPUT .\Media\Chapter 5\coding_workspace.png
+INPUT .\Media\Chapter 5\standalone_workspace.png
+INPUT .\Media\Chapter 5\standalone_workspace.png
+INPUT .\Media\Chapter 5\standalone_workspace.png
+INPUT .\Media\Chapter 5\standalone_workspace.png
+INPUT .\Media\Chapter 5\standalone_workspace.png
+INPUT .\Media\Chapter 5\standalone_workspace.png
+INPUT .\Media\Chapter 5\standalone_workspace.png
+INPUT .\Media\Chapter 5\contest_hub.png
+INPUT .\Media\Chapter 5\contest_hub.png
+INPUT .\Media\Chapter 5\contest_hub.png
+INPUT .\Media\Chapter 5\contest_hub.png
+INPUT .\Media\Chapter 5\contest_hub.png
+INPUT .\Media\Chapter 5\contest_hub.png
+INPUT .\Media\Chapter 5\contest_hub.png
+INPUT .\Media\Chapter 5\ai_interview.png
+INPUT .\Media\Chapter 5\ai_interview.png
+INPUT .\Media\Chapter 5\ai_interview.png
+INPUT .\Media\Chapter 5\ai_interview.png
+INPUT .\Media\Chapter 5\ai_interview.png
+INPUT .\Media\Chapter 5\ai_interview.png
+INPUT .\Media\Chapter 5\ai_interview.png
+INPUT .\Media\Chapter 5\companies.png
+INPUT .\Media\Chapter 5\companies.png
+INPUT .\Media\Chapter 5\companies.png
+INPUT .\Media\Chapter 5\companies.png
+INPUT .\Media\Chapter 5\companies.png
+INPUT .\Media\Chapter 5\companies.png
+INPUT .\Media\Chapter 5\companies.png
+INPUT .\Media\Chapter 5\company_detail.png
+INPUT .\Media\Chapter 5\company_detail.png
+INPUT .\Media\Chapter 5\company_detail.png
+INPUT .\Media\Chapter 5\company_detail.png
+INPUT .\Media\Chapter 5\company_detail.png
+INPUT .\Media\Chapter 5\company_detail.png
+INPUT .\Media\Chapter 5\company_detail.png
+INPUT .\Media\Chapter 5\profile_editor.png
+INPUT .\Media\Chapter 5\profile_editor.png
+INPUT .\Media\Chapter 5\profile_editor.png
+INPUT .\Media\Chapter 5\profile_editor.png
+INPUT .\Media\Chapter 5\profile_editor.png
+INPUT .\Media\Chapter 5\profile_editor.png
+INPUT .\Media\Chapter 5\profile_editor.png
+INPUT .\Media\Chapter 5\skills_passport.png
+INPUT .\Media\Chapter 5\skills_passport.png
+INPUT .\Media\Chapter 5\skills_passport.png
+INPUT .\Media\Chapter 5\skills_passport.png
+INPUT .\Media\Chapter 5\skills_passport.png
+INPUT .\Media\Chapter 5\skills_passport.png
+INPUT .\Media\Chapter 5\skills_passport.png
+INPUT .\Media\Chapter 5\shared_passport.png
+INPUT .\Media\Chapter 5\shared_passport.png
+INPUT .\Media\Chapter 5\shared_passport.png
+INPUT .\Media\Chapter 5\shared_passport.png
+INPUT .\Media\Chapter 5\shared_passport.png
+INPUT .\Media\Chapter 5\shared_passport.png
+INPUT .\Media\Chapter 5\shared_passport.png
+INPUT .\Media\Chapter 5\shared_portfolio.png
+INPUT .\Media\Chapter 5\shared_portfolio.png
+INPUT .\Media\Chapter 5\shared_portfolio.png
+INPUT .\Media\Chapter 5\shared_portfolio.png
+INPUT .\Media\Chapter 5\shared_portfolio.png
+INPUT .\Media\Chapter 5\shared_portfolio.png
+INPUT .\Media\Chapter 5\shared_portfolio.png
+INPUT .\Media\Chapter 5\analytics.png
+INPUT .\Media\Chapter 5\analytics.png
+INPUT .\Media\Chapter 5\analytics.png
+INPUT .\Media\Chapter 5\analytics.png
+INPUT .\Media\Chapter 5\analytics.png
+INPUT .\Media\Chapter 5\analytics.png
+INPUT .\Media\Chapter 5\analytics.png
+INPUT .\Media\Chapter 5\settings.png
+INPUT .\Media\Chapter 5\settings.png
+INPUT .\Media\Chapter 5\settings.png
+INPUT .\Media\Chapter 5\settings.png
+INPUT .\Media\Chapter 5\settings.png
+INPUT .\Media\Chapter 5\settings.png
+INPUT .\Media\Chapter 5\settings.png
+INPUT .\Media\Chapter 5\admin_users.png
+INPUT .\Media\Chapter 5\admin_users.png
+INPUT .\Media\Chapter 5\admin_users.png
+INPUT .\Media\Chapter 5\admin_users.png
+INPUT .\Media\Chapter 5\admin_users.png
+INPUT .\Media\Chapter 5\admin_users.png
+INPUT .\Media\Chapter 5\admin_users.png
+INPUT .\Media\Chapter 5\admin_tracks.png
+INPUT .\Media\Chapter 5\admin_tracks.png
+INPUT .\Media\Chapter 5\admin_tracks.png
+INPUT .\Media\Chapter 5\admin_tracks.png
+INPUT .\Media\Chapter 5\admin_tracks.png
+INPUT .\Media\Chapter 5\admin_tracks.png
+INPUT .\Media\Chapter 5\admin_tracks.png
+INPUT .\Media\Chapter 5\admin_topics.png
+INPUT .\Media\Chapter 5\admin_topics.png
+INPUT .\Media\Chapter 5\admin_topics.png
+INPUT .\Media\Chapter 5\admin_topics.png
+INPUT .\Media\Chapter 5\admin_topics.png
+INPUT .\Media\Chapter 5\admin_topics.png
+INPUT .\Media\Chapter 5\admin_topics.png
+INPUT .\Media\Chapter 5\admin_questions.png
+INPUT .\Media\Chapter 5\admin_questions.png
+INPUT .\Media\Chapter 5\admin_questions.png
+INPUT .\Media\Chapter 5\admin_questions.png
+INPUT .\Media\Chapter 5\admin_questions.png
+INPUT .\Media\Chapter 5\admin_questions.png
+INPUT .\Media\Chapter 5\admin_questions.png
+INPUT .\Media\Chapter 5\admin_tests.png
+INPUT .\Media\Chapter 5\admin_tests.png
+INPUT .\Media\Chapter 5\admin_tests.png
+INPUT .\Media\Chapter 5\admin_tests.png
+INPUT .\Media\Chapter 5\admin_tests.png
+INPUT .\Media\Chapter 5\admin_tests.png
+INPUT .\Media\Chapter 5\admin_tests.png
+INPUT .\Media\Chapter 5\admin_companies.png
+INPUT .\Media\Chapter 5\admin_companies.png
+INPUT .\Media\Chapter 5\admin_companies.png
+INPUT .\Media\Chapter 5\admin_companies.png
+INPUT .\Media\Chapter 5\admin_companies.png
+INPUT .\Media\Chapter 5\admin_companies.png
+INPUT .\Media\Chapter 5\admin_companies.png
 INPUT .\Chapters\chap_6.tex
 INPUT .\Chapters\chap_6.tex
 OUTPUT Chapters\chap_6.aux
 INPUT .\Chapters\chap_6.tex
 INPUT .\Chapters\chap_6.tex
 INPUT Chapters\chap_6.tex
-INPUT .\Chapters\chap_7.tex
-INPUT .\Chapters\chap_7.tex
-OUTPUT Chapters\chap_7.aux
-INPUT .\Chapters\chap_7.tex
-INPUT .\Chapters\chap_7.tex
-INPUT Chapters\chap_7.tex
 INPUT .\references.tex
 INPUT .\references.tex
 OUTPUT references.aux
@@ -637,9 +859,6 @@ INPUT Chapters\chap_5.aux
 INPUT .\Chapters\chap_6.aux
 INPUT .\Chapters\chap_6.aux
 INPUT Chapters\chap_6.aux
-INPUT .\Chapters\chap_7.aux
-INPUT .\Chapters\chap_7.aux
-INPUT Chapters\chap_7.aux
 INPUT .\references.aux
 INPUT .\references.aux
 INPUT references.aux

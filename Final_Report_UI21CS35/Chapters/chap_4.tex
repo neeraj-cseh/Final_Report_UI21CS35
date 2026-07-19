@@ -465,3 +465,548 @@ The implemented module offers several advantages.
 
 \end{itemize}
 
+\section{Dashboard and Analytics Module}
+
+The Dashboard and Analytics Module provides students with a centralized view of their placement preparation progress. It aggregates learning activities, coding practice, quiz performance, interview readiness, company preparation, and daily goals into a single interactive dashboard. This enables students to monitor their overall progress and identify areas requiring improvement.
+
+Figure~\ref{fig:dashboard_workflow} illustrates the workflow of the Dashboard and Analytics Module.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Media/Chapter 4/12 Dashboard Workflow.jpg}
+\caption{Dashboard and Analytics Workflow}
+\label{fig:dashboard_workflow}
+\end{figure}
+
+The dashboard is generated dynamically whenever an authenticated user accesses the application. The frontend requests dashboard information through the Dashboard API, which collects data from multiple backend modules.
+
+The backend retrieves information related to user profiles, completed topics, quiz attempts, coding submissions, interview sessions, daily goals, revision schedules, company readiness records, and activity history. These records are processed to calculate important performance indicators such as completion percentage, quiz accuracy, coding statistics, interview readiness score, daily learning streak, and overall placement readiness.
+
+The processed data is returned to the frontend as structured JSON responses. The React application visualizes this information using charts, progress indicators, summary cards, and statistical widgets. Since the dashboard retrieves live information from the database, users always receive updated analytics reflecting their latest activities.
+
+The dashboard also serves as a personalized learning assistant by highlighting pending topics, revision requirements, upcoming milestones, and company-specific preparation status. This enables students to make informed decisions regarding their preparation strategy.
+
+\subsection{Dashboard Features}
+
+The Dashboard and Analytics Module provides the following features.
+
+\begin{itemize}
+
+\item Overall placement readiness score.
+
+\item Topic-wise completion statistics.
+
+\item Coding practice performance.
+
+\item Quiz and mock test analysis.
+
+\item Interview readiness tracking.
+
+\item Company preparation progress.
+
+\item Daily learning goals and streak monitoring.
+
+\item Activity history and recent achievements.
+
+\item Personalized learning recommendations.
+
+\end{itemize}
+
+\subsection{Advantages of the Dashboard Module}
+
+The dashboard implementation offers several advantages.
+
+\begin{itemize}
+
+\item Centralized visualization of student progress.
+
+\item Real-time performance analytics.
+
+\item Continuous monitoring of placement readiness.
+
+\item Easy identification of weak topics.
+
+\item Motivation through progress tracking and learning streaks.
+
+\item Integration of multiple learning modules into a unified analytical interface.
+
+\end{itemize}
+
+\section{Mock Test Module}
+
+The Mock Test Module enables students to evaluate their preparation by attempting topic-wise assessments and milestone-based mock examinations. The module simulates actual placement examinations by providing timed tests, automatic evaluation, score calculation, and performance analysis.
+
+The objective of this module is to help students identify weak areas, improve problem-solving speed, and continuously monitor their placement readiness through regular assessments.
+
+Figure~\ref{fig:mock_test_workflow} illustrates the workflow of the Mock Test Module.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Media/Chapter 4/14 Mock Test Workflow.jpg}
+\caption{Mock Test Workflow}
+\label{fig:mock_test_workflow}
+\end{figure}
+
+The mock test process begins when an authenticated student selects a test from the available assessments displayed on the frontend. The React application requests the corresponding test details from the backend through the REST API.
+
+The backend retrieves the selected test, associated topics, and question set from the database before creating a new TestAttempt record. This record stores the test identifier, start time, and user information, allowing the platform to track the student's progress throughout the assessment.
+
+During the examination, students submit their answers through the frontend interface. The submitted responses are transmitted to the backend, where each answer is compared with the correct option stored in the database. The backend automatically calculates the obtained score, accuracy percentage, and other performance metrics before updating the TestAttempt record.
+
+After evaluation, the calculated results are returned to the frontend and presented through scorecards, performance summaries, and topic-wise analysis. These results are also incorporated into the dashboard analytics module, enabling students to monitor their improvement over time and identify topics requiring additional practice.
+
+\subsection{Mock Test Workflow}
+
+The Mock Test Module follows the sequence below.
+
+\begin{enumerate}
+
+\item The student selects a mock test.
+
+\item The frontend requests the test details.
+
+\item The backend retrieves questions from the database.
+
+\item A new TestAttempt record is created.
+
+\item The student submits answers.
+
+\item The backend evaluates each response.
+
+\item The final score and statistics are calculated.
+
+\item Results are stored in the database.
+
+\item Performance analytics are updated.
+
+\item The frontend displays the scorecard and analysis.
+
+\end{enumerate}
+
+\subsection{Major Features}
+
+The Mock Test Module provides the following features.
+
+\begin{itemize}
+
+\item Topic-wise assessments.
+
+\item Timed examinations.
+
+\item Automatic evaluation.
+
+\item Instant score generation.
+
+\item Accuracy calculation.
+
+\item Performance history.
+
+\item Dashboard integration.
+
+\item Continuous placement readiness assessment.
+
+\end{itemize}
+
+\subsection{Advantages of the Mock Test Module}
+
+The implemented module provides several benefits.
+
+\begin{itemize}
+
+\item Simulates real placement examinations.
+
+\item Provides immediate performance feedback.
+
+\item Identifies weak learning areas.
+
+\item Improves examination confidence.
+
+\item Enables continuous progress tracking.
+
+\item Supports data-driven preparation strategies.
+
+\end{itemize}
+
+\section{AI Interview Module}
+
+The AI Interview Module is designed to simulate technical interview sessions and help students improve their communication, problem-solving, and technical knowledge. Unlike traditional question banks, this module provides an interactive interview experience by presenting questions, collecting responses, evaluating answers, and generating intelligent feedback using Artificial Intelligence.
+
+The module supports different interview categories and maintains complete interview history, enabling students to monitor their progress over multiple interview sessions.
+
+Figure~\ref{fig:ai_interview_workflow} illustrates the workflow of the AI Interview Module.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Media/Chapter 4/15 AI Interview Workflow.jpg}
+\caption{AI Interview Workflow}
+\label{fig:ai_interview_workflow}
+\end{figure}
+
+The AI Interview Module begins when an authenticated student selects an interview category through the frontend interface. The React application requests the available interview configuration from the backend, including interview categories and question settings.
+
+After the interview configuration is loaded, the student starts a new interview session. The backend creates an InterviewSession record in the database and returns the first interview question to the frontend. Throughout the interview, each submitted response is transmitted to the backend for processing and evaluation.
+
+The backend records every question and corresponding user response in the InterviewQA table. When AI functionality is enabled, the submitted answer is forwarded to the Groq API, which generates feedback regarding correctness, communication quality, technical depth, and possible improvements.
+
+The generated feedback is returned to the frontend and displayed immediately after each response or at the end of the interview session, depending on the interview configuration. The backend also calculates interview scores and stores the final interview result, allowing students to review previous interview sessions and monitor their overall interview readiness.
+
+\subsection{AI Interview Workflow}
+
+The AI Interview Module follows the sequence below.
+
+\begin{enumerate}
+
+\item The student selects an interview category.
+
+\item The frontend requests interview configuration.
+
+\item The backend creates a new InterviewSession.
+
+\item The first interview question is displayed.
+
+\item The student submits an answer.
+
+\item The backend records the response.
+
+\item The answer is evaluated using backend logic and AI services.
+
+\item Feedback and evaluation scores are generated.
+
+\item The interview continues until all questions are completed.
+
+\item The final interview report is stored and displayed.
+
+\end{enumerate}
+
+\subsection{Major Features}
+
+The AI Interview Module provides the following features.
+
+\begin{itemize}
+
+\item Category-based interview sessions.
+
+\item AI-assisted answer evaluation.
+
+\item Automated interview scoring.
+
+\item Detailed feedback generation.
+
+\item Interview history management.
+
+\item Readiness assessment.
+
+\item Backend integration using REST APIs.
+
+\item Secure storage of interview records.
+
+\end{itemize}
+
+\subsection{Advantages of the AI Interview Module}
+
+The AI Interview Module offers several advantages.
+
+\begin{itemize}
+
+\item Simulates real technical interview experiences.
+
+\item Provides immediate AI-generated feedback.
+
+\item Improves communication and technical skills.
+
+\item Enables continuous interview practice.
+
+\item Tracks interview performance over time.
+
+\item Supports personalized placement preparation.
+
+\end{itemize}
+
+\section{Coding Practice Module}
+
+The Coding Practice Module enables students to solve programming problems directly within the PrepSmart platform. It provides an integrated coding environment where users can write, execute, and submit solutions without relying on external programming websites. The module supports multiple programming languages, automatic code evaluation, execution statistics, and result visualization.
+
+The primary objective of this module is to strengthen problem-solving skills by providing an environment similar to technical coding interviews and online programming assessments.
+
+Figure~\ref{fig:coding_workflow} illustrates the workflow of the Coding Practice Module.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Media/Chapter 4/16 Coding Execution Workflow.jpg}
+\caption{Coding Practice Workflow}
+\label{fig:coding_workflow}
+\end{figure}
+
+The coding workflow begins when an authenticated student selects a programming problem from the coding workspace. The frontend retrieves the problem statement, constraints, supported programming languages, and starter code from the backend through REST APIs.
+
+The student writes the solution using the integrated code editor and may execute the program using custom input before final submission. For execution requests, the frontend sends the source code, selected programming language, and input data to the backend.
+
+The backend forwards the request to the local code execution engine, which compiles and executes the submitted program inside a controlled subprocess environment. During execution, the system records standard output, error messages, execution time, memory usage, and timeout status.
+
+When the student submits the solution, a new CodeSubmission record is created in the database. The backend invokes the evaluation service, which executes the submitted program against all predefined test cases associated with the selected coding problem. The generated output is compared with the expected output for every test case to determine whether the solution is accepted.
+
+After evaluation, the backend updates the submission status, execution statistics, runtime information, and evaluation result before returning the complete report to the frontend. The React application displays the evaluation outcome, enabling students to analyze errors, improve their solutions, and continue practicing programming problems.
+
+\subsection{Coding Practice Workflow}
+
+The Coding Practice Module follows the sequence below.
+
+\begin{enumerate}
+
+\item The student selects a programming problem.
+
+\item The frontend retrieves the problem details.
+
+\item The student writes source code using the integrated editor.
+
+\item The code is executed using custom input when required.
+
+\item The backend compiles and executes the program.
+
+\item Execution statistics are collected.
+
+\item The student submits the final solution.
+
+\item The backend evaluates the solution against all test cases.
+
+\item Submission results are stored in the database.
+
+\item The frontend displays the final evaluation report.
+
+\end{enumerate}
+
+\subsection{Major Features}
+
+The Coding Practice Module provides the following features.
+
+\begin{itemize}
+
+\item Integrated online code editor.
+
+\item Support for multiple programming languages.
+
+\item Custom input execution.
+
+\item Automatic compilation and execution.
+
+\item Test case based evaluation.
+
+\item Runtime and memory analysis.
+
+\item Submission history.
+
+\item Secure local code execution environment.
+
+\end{itemize}
+
+\subsection{Advantages of the Coding Practice Module}
+
+The Coding Practice Module provides several advantages.
+
+\begin{itemize}
+
+\item Provides an interview-like programming environment.
+
+\item Enables immediate execution and evaluation of solutions.
+
+\item Helps students improve coding efficiency.
+
+\item Supports continuous programming practice.
+
+\item Automatically records submission history.
+
+\item Integrates coding performance with dashboard analytics.
+
+\end{itemize}
+
+\section{Portfolio and Skills Passport Module}
+
+The Portfolio and Skills Passport Module enables students to build a professional digital profile that showcases their academic achievements, technical skills, projects, certifications, and overall placement readiness. Unlike traditional resumes, the module dynamically generates a structured portfolio and an employability passport using information already available within the PrepSmart platform.
+
+The module also supports public sharing of portfolios through unique URLs, allowing recruiters and placement coordinators to review student profiles without requiring access to the internal system.
+
+Figure~\ref{fig:portfolio_workflow} illustrates the workflow of the Portfolio and Skills Passport Module.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Media/Chapter 4/17 Portfolio Workflow.jpg}
+\caption{Portfolio and Skills Passport Workflow}
+\label{fig:portfolio_workflow}
+\end{figure}
+
+The Portfolio and Skills Passport Module begins when an authenticated student accesses the portfolio section through the frontend interface. The React application sends a request to the backend to retrieve the user's academic information, projects, certifications, technical skills, coding statistics, interview performance, and placement preparation progress.
+
+The backend collects the required information from multiple database entities, including UserProfile, UserProject, UserCertificate, UserPassport, UserPortfolio, and other related records. These data are processed to generate a comprehensive professional profile representing the student's overall employability.
+
+Students can further customize their portfolio by adding project descriptions, technology stacks, GitHub links, and personal achievements. The backend stores these modifications and generates a unique public URL that can be shared with recruiters or placement coordinators.
+
+The Skills Passport is generated automatically using analytical information collected throughout the placement preparation journey. Metrics such as coding performance, interview readiness, learning progress, and technical competency are consolidated into a unified employability profile that reflects the student's current preparation status.
+
+Whenever a recruiter or external user accesses a shared portfolio or passport link, the backend retrieves only publicly available information and renders the corresponding profile without exposing confidential user data.
+
+\subsection{Portfolio Generation Workflow}
+
+The Portfolio and Skills Passport Module follows the workflow below.
+
+\begin{enumerate}
+
+\item The student accesses the portfolio dashboard.
+
+\item The frontend requests portfolio information.
+
+\item The backend retrieves academic and placement data.
+
+\item Portfolio information is generated dynamically.
+
+\item Skills Passport metrics are calculated.
+
+\item Public sharing links are generated.
+
+\item Portfolio information is stored in the database.
+
+\item Shared portfolios are displayed to authorized external users.
+
+\end{enumerate}
+
+\subsection{Major Features}
+
+The Portfolio and Skills Passport Module provides the following features.
+
+\begin{itemize}
+
+\item Automatic portfolio generation.
+
+\item Skills Passport generation.
+
+\item Public portfolio sharing.
+
+\item Project management.
+
+\item Certification management.
+
+\item Recruiter-friendly profile presentation.
+
+\item Dynamic employability score generation.
+
+\item Integration with placement analytics.
+
+\end{itemize}
+
+\subsection{Advantages of the Portfolio and Skills Passport Module}
+
+The implemented module offers several advantages.
+
+\begin{itemize}
+
+\item Eliminates manual portfolio preparation.
+
+\item Automatically reflects placement preparation progress.
+
+\item Improves recruiter visibility.
+
+\item Provides a centralized professional profile.
+
+\item Supports public sharing through secure URLs.
+
+\item Encourages continuous profile improvement.
+
+\end{itemize}
+
+\section{Company Readiness Module}
+
+The Company Readiness Module assists students in preparing for specific companies by providing personalized preparation tracking, readiness evaluation, and company-oriented learning recommendations. Instead of following a generic preparation strategy, students can select their target companies and monitor their progress based on the requirements of each organization.
+
+The module combines learning progress, coding performance, interview preparation, and assessment results to generate company-specific readiness information, enabling students to identify areas that require additional attention before participating in placement drives.
+
+Figure~\ref{fig:company_readiness_workflow} illustrates the workflow of the Company Readiness Module.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Media/Chapter 4/18 Company Readiness Workflow.jpg}
+\caption{Company Readiness Workflow}
+\label{fig:company_readiness_workflow}
+\end{figure}
+
+The Company Readiness Module begins when an authenticated student selects a target company through the frontend interface. The React application requests company-specific information from the backend, including preparation requirements, recommended topics, coding difficulty, interview expectations, and readiness metrics.
+
+The backend retrieves the selected company's preparation profile together with the student's learning progress, coding submissions, quiz performance, interview results, and completed learning topics. These records are analyzed to calculate the student's readiness level for the selected company.
+
+Based on the calculated readiness score, the module identifies completed requirements, pending topics, weak subject areas, and recommended activities. The generated information is returned to the frontend, where it is presented using progress indicators, readiness cards, and detailed preparation summaries.
+
+Whenever the student completes additional learning activities, coding problems, or mock interviews, the readiness score is automatically recalculated, ensuring that the displayed information always reflects the student's current preparation status.
+
+\subsection{Company Readiness Workflow}
+
+The Company Readiness Module follows the sequence below.
+
+\begin{enumerate}
+
+\item The student selects a target company.
+
+\item The frontend requests company preparation details.
+
+\item The backend retrieves the student's preparation records.
+
+\item Company requirements are compared with the student's progress.
+
+\item Readiness scores are calculated.
+
+\item Weak areas and pending topics are identified.
+
+\item Personalized recommendations are generated.
+
+\item The frontend displays the updated company readiness dashboard.
+
+\end{enumerate}
+
+\subsection{Major Features}
+
+The Company Readiness Module provides the following features.
+
+\begin{itemize}
+
+\item Company-specific preparation tracking.
+
+\item Personalized readiness score calculation.
+
+\item Topic recommendation based on company requirements.
+
+\item Coding readiness analysis.
+
+\item Interview readiness evaluation.
+
+\item Progress visualization.
+
+\item Automatic readiness updates.
+
+\item Integration with dashboard analytics.
+
+\end{itemize}
+
+\subsection{Advantages of the Company Readiness Module}
+
+The implemented module provides several advantages.
+
+\begin{itemize}
+
+\item Supports focused preparation for individual companies.
+
+\item Helps students identify preparation gaps.
+
+\item Provides personalized learning recommendations.
+
+\item Continuously updates readiness scores.
+
+\item Integrates multiple preparation activities into a unified evaluation.
+
+\item Improves placement preparation efficiency.
+
+\end{itemize}
+
+\section{Chapter Summary}
+
+This chapter described the implementation of the PrepSmart platform, including the technologies, development environment, frontend architecture, backend architecture, authentication mechanism, placement preparation workflow, dashboard analytics, mock test module, AI interview module, coding practice environment, portfolio and skills passport generation, and company readiness module.
+
+The implementation follows a modular client--server architecture developed using React, Django, Django REST Framework, and MySQL. The integration of AI-assisted interview evaluation, coding practice, personalized analytics, and company-specific preparation provides students with a comprehensive placement preparation ecosystem.
+
+The next chapter presents the results of the developed system through screenshots of the implemented user interfaces and demonstrates the practical functionality of each module.

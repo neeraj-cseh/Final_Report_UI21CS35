@@ -3,9 +3,9 @@
 \contentsline {chapter}{Declaration}{iii}{section*.3}%
 \contentsline {chapter}{Acknowledgements}{iv}{section*.4}%
 \contentsline {chapter}{Abstract}{v}{section*.5}%
-\contentsline {chapter}{List of Abbreviations and Acronyms}{viii}{section*.8}%
-\contentsline {chapter}{List of Figures}{x}{section*.9}%
-\contentsline {chapter}{List of Tables}{x}{chapter*.10}%
+\contentsline {chapter}{List of Abbreviations and Acronyms}{x}{section*.8}%
+\contentsline {chapter}{List of Figures}{xii}{section*.9}%
+\contentsline {chapter}{List of Tables}{xiii}{chapter*.10}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problem Statement}{2}{section.1.2}%
@@ -77,4 +77,77 @@
 \contentsline {subsection}{\numberline {4.7.1}Placement Preparation Workflow}{47}{subsection.4.7.1}%
 \contentsline {subsection}{\numberline {4.7.2}Major Features}{47}{subsection.4.7.2}%
 \contentsline {subsection}{\numberline {4.7.3}Advantages of the Placement Preparation Module}{48}{subsection.4.7.3}%
-\contentsline {chapter}{References}{49}{section*.28}%
+\contentsline {section}{\numberline {4.8}Dashboard and Analytics Module}{48}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Dashboard Features}{49}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Advantages of the Dashboard Module}{50}{subsection.4.8.2}%
+\contentsline {section}{\numberline {4.9}Mock Test Module}{50}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Mock Test Workflow}{51}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Major Features}{52}{subsection.4.9.2}%
+\contentsline {subsection}{\numberline {4.9.3}Advantages of the Mock Test Module}{52}{subsection.4.9.3}%
+\contentsline {section}{\numberline {4.10}AI Interview Module}{52}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}AI Interview Workflow}{53}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.10.2}Major Features}{54}{subsection.4.10.2}%
+\contentsline {subsection}{\numberline {4.10.3}Advantages of the AI Interview Module}{55}{subsection.4.10.3}%
+\contentsline {section}{\numberline {4.11}Coding Practice Module}{55}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Coding Practice Workflow}{56}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}Major Features}{57}{subsection.4.11.2}%
+\contentsline {subsection}{\numberline {4.11.3}Advantages of the Coding Practice Module}{57}{subsection.4.11.3}%
+\contentsline {section}{\numberline {4.12}Portfolio and Skills Passport Module}{58}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Portfolio Generation Workflow}{59}{subsection.4.12.1}%
+\contentsline {subsection}{\numberline {4.12.2}Major Features}{59}{subsection.4.12.2}%
+\contentsline {subsection}{\numberline {4.12.3}Advantages of the Portfolio and Skills Passport Module}{60}{subsection.4.12.3}%
+\contentsline {section}{\numberline {4.13}Company Readiness Module}{60}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}Company Readiness Workflow}{61}{subsection.4.13.1}%
+\contentsline {subsection}{\numberline {4.13.2}Major Features}{62}{subsection.4.13.2}%
+\contentsline {subsection}{\numberline {4.13.3}Advantages of the Company Readiness Module}{62}{subsection.4.13.3}%
+\contentsline {section}{\numberline {4.14}Chapter Summary}{63}{section.4.14}%
+\contentsline {chapter}{\numberline {5}Results and User Interface}{64}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{64}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Landing Page}{64}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Major Features of the Landing Page}{66}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Advantages}{66}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}User Authentication}{67}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Login Page}{67}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Registration Page}{68}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Dashboard}{70}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Major Components of the Dashboard}{72}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Functionalities}{73}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Advantages}{73}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Placement Preparation Module}{73}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Prep Journey}{74}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Learning Roadmaps}{75}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Milestones}{77}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Topic Study}{78}{subsection.5.5.4}%
+\contentsline {section}{\numberline {5.6}Coding Practice Module}{79}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Problem Arena}{79}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Coding Workspace}{81}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Standalone Code Workspace}{83}{subsection.5.6.3}%
+\contentsline {subsection}{\numberline {5.6.4}Contest Hub}{84}{subsection.5.6.4}%
+\contentsline {section}{\numberline {5.7}AI Interview Module}{85}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Company Preparation Module}{87}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Companies}{87}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}Company Details}{88}{subsection.5.8.2}%
+\contentsline {section}{\numberline {5.9}Profile Management}{89}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Profile Editor}{89}{subsection.5.9.1}%
+\contentsline {subsection}{\numberline {5.9.2}Skills Passport}{91}{subsection.5.9.2}%
+\contentsline {section}{\numberline {5.10}Shared Profiles}{92}{section.5.10}%
+\contentsline {subsection}{\numberline {5.10.1}Shared Passport}{92}{subsection.5.10.1}%
+\contentsline {subsection}{\numberline {5.10.2}Shared Portfolio}{93}{subsection.5.10.2}%
+\contentsline {section}{\numberline {5.11}Analytics Dashboard}{94}{section.5.11}%
+\contentsline {section}{\numberline {5.12}Settings}{96}{section.5.12}%
+\contentsline {section}{\numberline {5.13}Administration Module}{97}{section.5.13}%
+\contentsline {subsection}{\numberline {5.13.1}User Management}{97}{subsection.5.13.1}%
+\contentsline {subsection}{\numberline {5.13.2}Track Management}{98}{subsection.5.13.2}%
+\contentsline {subsection}{\numberline {5.13.3}Topic Management}{99}{subsection.5.13.3}%
+\contentsline {subsection}{\numberline {5.13.4}Question Management}{100}{subsection.5.13.4}%
+\contentsline {subsection}{\numberline {5.13.5}Test Management}{101}{subsection.5.13.5}%
+\contentsline {subsection}{\numberline {5.13.6}Company Management}{102}{subsection.5.13.6}%
+\contentsline {section}{\numberline {5.14}Chapter Summary}{103}{section.5.14}%
+\contentsline {chapter}{\numberline {6}Conclusion and Future Scope}{104}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{104}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Conclusion}{104}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Objectives Achieved}{105}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Current Limitations}{105}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Future Scope}{106}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Chapter Summary}{106}{section.6.6}%
+\contentsline {chapter}{References}{108}{section*.61}%
