@@ -1,26 +1,16 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces System Architecture of PrepSmart Platform}}{5}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Data Flow Diagram of PrepSmart Platform}}{6}{figure.caption.13}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Overall System Architecture of PrepSmart}}{17}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Five-Layer Software Architecture of PrepSmart}}{18}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces High-Level Software Architecture of PrepSmart}}{21}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Use Case Diagram of PrepSmart}}{24}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Level-0 Data Flow Diagram of PrepSmart}}{26}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Class Diagram of PrepSmart}}{29}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Entity Relationship Diagram of PrepSmart}}{31}{figure.caption.21}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Login Page.}}{11}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Signup Page.}}{12}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Dashboard Page - Overview}}{13}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Dashboard Page - Activity.}}{14}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Learning Path Page - Tracks.}}{15}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Learning Path Page - Topics.}}{16}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Practice Page - Domains.}}{17}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Practice Page - Questions.}}{18}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Mock Test Page - Instructions.}}{19}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Mock Test Page - Active Assessment.}}{19}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Mock Test Page - Results.}}{20}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Code Editor Page.}}{21}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces AI Interview Page - Setup.}}{21}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces AI Interview Page - Session.}}{22}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Analytics Page.}}{23}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Company Readiness Page.}}{24}{figure.caption.30}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces React Component Architecture of PrepSmart}}{39}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces API Request Flow in PrepSmart}}{41}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Authentication Sequence Diagram of PrepSmart}}{43}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Placement Preparation Workflow}}{46}{figure.caption.27}%

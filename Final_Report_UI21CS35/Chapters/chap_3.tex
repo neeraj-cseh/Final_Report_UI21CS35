@@ -1,85 +1,552 @@
-\chapter{Technologies Used}
+\chapter{System Analysis and Design}
 
-\section{Overview}
+\section{Introduction}
 
-The \textbf{PrepSmart platform} is developed using a modern and efficient technology stack that ensures scalability, performance, and ease of development. The system follows a \textbf{full-stack web development approach,} where the frontend, backend, and database are designed as independent yet interconnected components.
+System analysis and design is one of the most important phases in the Software Development Life Cycle (SDLC), as it establishes the foundation for developing a reliable, scalable, and maintainable software system. During this phase, the requirements of the proposed system are analyzed, the overall architecture is designed, and the interactions between different system components are defined before implementation begins.
 
-\vspace{0.2cm}
+For the PrepSmart platform, the analysis phase focused on understanding the challenges faced by students during placement preparation and identifying the functional requirements necessary to address those challenges. Existing placement preparation platforms were studied to determine their strengths and limitations, enabling the design of a unified solution that integrates multiple preparation activities within a single application.
 
-The frontend is responsible for delivering an interactive and responsive user interface, while the backend handles business logic, API communication, and data processing. The database is used for persistent storage of application data such as user information, test results, and analytics.
+Based on the identified requirements, the system architecture, software modules, database structure, and user interactions were carefully designed. The platform follows a modular architecture in which each module performs a specific responsibility while remaining seamlessly integrated with the overall system. This design approach improves maintainability, scalability, and future extensibility.
 
-\vspace{0.2cm}
+This chapter presents the requirement analysis, feasibility study, software architecture, UML models, database design, and overall system design adopted during the development of PrepSmart. These design artifacts provide a clear blueprint for the implementation discussed in the subsequent chapter.
 
-The selected technologies were chosen based on their \textbf{performance, flexibility, community support, and compatibility} with real-world application development.
+\section{Requirement Analysis}
 
-\section{Frontend Technologies}
+Requirement analysis is the process of identifying and documenting the functional and non-functional requirements of a software system. It ensures that the developed application satisfies user expectations while maintaining reliability, security, scalability, and performance. The requirements for PrepSmart were identified by studying existing placement preparation platforms, understanding the campus recruitment process, and analyzing the practical challenges encountered by students during placement preparation.
 
-The frontend of the \textbf{PrepSmart platform} is developed using React, a popular JavaScript library for building user interfaces. \textbf{React} enables the creation of dynamic and reusable UI components, improving development efficiency and maintainability. Additional frontend technologies include:
+The identified requirements were classified into two major categories:
 
-\begin{itemize}[noitemsep, topsep=2pt]
-    \item \textbf{HTML (HyperText Markup Language):} Used for structuring web content.
-    \item \textbf{CSS (Cascading Style Sheets):} Used for styling and layout design.
-    \item \textbf{JavaScript (JS):} Provides interactivity and dynamic behavior.
-    \item \textbf{Axios / Fetch API:} Used for making HTTP requests to the backend.
+\begin{itemize}
+    \item Functional Requirements
+    \item Non-Functional Requirements
 \end{itemize}
 
-React’s component-based architecture allows efficient state management and improves user experience by enabling fast rendering and seamless navigation across the platform.
+\subsection{Functional Requirements}
 
-\section{Backend Technologies}
+Functional requirements describe the services and operations that the system must perform to satisfy user needs. These requirements define the core functionalities implemented in PrepSmart and determine how users interact with different modules of the platform.
 
-The backend of the PrepSmart platform is developed using \textbf{Django REST Framework (DRF)}, which is a powerful toolkit for building Web APIs in Python. Key backend technologies include:
-
-\begin{itemize}[noitemsep, topsep=2pt]
-    \item \textbf{Django:} A high-level Python web framework that promotes rapid development and clean design.
-    \item \textbf{Django REST Framework (DRF):} Used to create RESTful APIs for communication between frontend and backend.
-    \item \textbf{JWT (JSON Web Token):} Used for secure user authentication and authorization.
-\end{itemize}
-
-\section{Database}
-
-The platform uses \textbf{MySQL}, a relational database management system, for storing structured data efficiently. The database stores:
-
-\begin{itemize}[noitemsep, topsep=2pt]
-    \item User information and profiles
-    \item Learning progress and tracks
-    \item Practice questions and test data
-    \item Analytics and performance metrics
-\end{itemize}
-
-MySQL ensures data consistency, reliability, and supports complex queries required for analytics and reporting.
-
-\section{Other Tools And Technologies}
-
-The development and execution of the PrepSmart platform also involve additional tools and technologies:
-
-\begin{itemize}[noitemsep, topsep=2pt]
-    \item \textbf{Python:} Used for backend logic and code execution.
-    \item \textbf{Local Code Execution Engine:} Allows users to run Python code in real-time.
-    \item \textbf{VS Code:} Used as the primary development environment.
-    \item \textbf{Git \& GitHub:} Used for version control and project management.
-    \item \textbf{Postman:} Used for API testing and debugging.
-\end{itemize}
-
-These tools enhance development efficiency, debugging, and deployment readiness of the system.
+The major functional requirements of the proposed system are summarized in Table \ref{tab:functional_requirements}.
 
 \begin{table}[H]
-    \centering
-    \caption{Technology Stack Overview}
-    \label{tab:tech_stack}
-    
-    \renewcommand{\arraystretch}{1.4} % increases row height
-    \setlength{\tabcolsep}{10pt} % increases column spacing
-    
-    \begin{tabular}{|p{4cm}|p{8cm}|}
-        \hline
-        \textbf{Layer} & \textbf{Technology Used} \\ \hline
-        Frontend & React, HTML, CSS, JavaScript \\ \hline
-        Backend & Django, Django REST Framework \\ \hline
-        Database & MySQL \\ \hline
-        Authentication & JSON Web Token (JWT) \\ \hline
-        Programming Language & Python \\ \hline
-        Tools & GitHub, Postman, VS Code \\ \hline
-    \end{tabular}
+\centering
+\caption{Functional Requirements of PrepSmart}
+\label{tab:functional_requirements}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|p{2cm}|p{5cm}|p{7cm}|}
+\hline
+\textbf{ID} & \textbf{Requirement} & \textbf{Description} \\
+\hline
+FR1 & User Authentication & The system shall allow users to register, log in, and securely authenticate using JWT. \\
+\hline
+FR2 & User Profile Management & Users shall be able to manage their personal and academic information. \\
+\hline
+FR3 & Learning Paths & The platform shall provide structured learning paths for placement preparation. \\
+\hline
+FR4 & Coding Practice & Users shall be able to solve programming problems using the integrated coding environment. \\
+\hline
+FR5 & Mock Tests & The system shall provide quizzes and mock tests for continuous assessment. \\
+\hline
+FR6 & AI Interview Module & Users shall be able to practice technical interviews using AI-assisted interview sessions. \\
+\hline
+FR7 & Resume Management & The platform shall allow users to create and manage resumes. \\
+\hline
+FR8 & Portfolio Management & Users shall be able to organize projects, skills, and achievements. \\
+\hline
+FR9 & Company Preparation & The system shall provide company-specific preparation resources and progress tracking. \\
+\hline
+FR10 & Dashboard Analytics & Users shall be able to monitor learning progress and placement readiness through personalized dashboards. \\
+\hline
+\end{tabular}
 \end{table}
 
-\newpage
+\subsection{Non-Functional Requirements}
+
+Non-functional requirements define the quality attributes of the proposed system. These requirements ensure that PrepSmart is secure, reliable, scalable, efficient, and easy to maintain.
+
+The major non-functional requirements are summarized in Table \ref{tab:nonfunctional_requirements}.
+
+\begin{table}[H]
+\centering
+\caption{Non-Functional Requirements of PrepSmart}
+\label{tab:nonfunctional_requirements}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|p{3cm}|p{11cm}|}
+\hline
+\textbf{Requirement} & \textbf{Description} \\
+\hline
+Performance & The system should respond efficiently to user requests with minimal latency. \\
+\hline
+Security & Authentication and authorization shall be implemented using JWT to protect user data. \\
+\hline
+Scalability & The architecture should support future modules and increased numbers of users. \\
+\hline
+Reliability & The platform should provide consistent and dependable operation under normal usage. \\
+\hline
+Usability & The user interface should be simple, intuitive, and responsive across different devices. \\
+\hline
+Maintainability & The modular software architecture should simplify future updates and maintenance. \\
+\hline
+Availability & The platform should remain accessible whenever users require placement preparation resources. \\
+\hline
+Portability & The application should be deployable across different operating systems and hosting environments. \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Feasibility Study}
+
+A feasibility study is conducted to evaluate whether the proposed system can be successfully developed and deployed within the available resources, time, and technical constraints. It helps determine the practicality and viability of the project before implementation. For the PrepSmart platform, the feasibility analysis is classified into technical, economic, and operational feasibility.
+
+\subsection{Technical Feasibility}
+
+The technical feasibility of PrepSmart is high because the project is developed using widely adopted open-source technologies. The frontend is implemented using React, while the backend is developed using Django and Django REST Framework (DRF). The database is managed using MySQL, and secure authentication is provided through JSON Web Tokens (JWT). These technologies are stable, well-documented, and supported by large developer communities, making the system reliable and maintainable.
+
+The development environment, including Visual Studio Code, Git, GitHub, and Postman, provides sufficient support for implementation, testing, and version control. Therefore, the proposed system can be developed efficiently without requiring specialized hardware or proprietary software.
+
+\subsection{Economic Feasibility}
+
+The development cost of PrepSmart is minimal because the project primarily utilizes free and open-source software tools. The programming languages, frameworks, database management system, and development utilities are freely available, eliminating licensing expenses.
+
+The hardware requirements are limited to a standard personal computer capable of running the development environment. Consequently, the overall cost of developing and maintaining the system remains low, making the project economically feasible for educational institutions and individual developers.
+
+\subsection{Operational Feasibility}
+
+PrepSmart is designed with a user-friendly interface that enables students to access various placement preparation resources through a single platform. The system reduces the need to switch between multiple applications by integrating learning paths, coding practice, mock tests, interview preparation, resume management, and analytical dashboards within one environment.
+
+The modular architecture simplifies maintenance and allows future enhancements without affecting existing functionality. Since the platform aligns with the requirements of students preparing for campus placements, it is expected to improve preparation efficiency and enhance the overall user experience.
+
+Based on the technical, economic, and operational analyses, the proposed system is considered feasible for development and deployment.
+
+\section{Overall System Architecture}
+
+The overall system architecture of PrepSmart follows a modular client--server architecture that separates the presentation layer, application logic, data management, and external service integrations into independent components. This separation of concerns improves maintainability, scalability, security, and simplifies future enhancements.
+
+The architecture has been designed to provide efficient communication between the frontend and backend while allowing additional services such as AI-assisted interview evaluation, coding execution, and contest synchronization to be integrated without affecting the core application.
+
+Figure~\ref{fig:overall_architecture} illustrates the overall architecture of the PrepSmart platform.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Media/Chapter 3/1 Overall System Architecture.jpg}
+\caption{Overall System Architecture of PrepSmart}
+\label{fig:overall_architecture}
+\end{figure}
+
+The architecture consists of four major components: the client layer, the application layer, the data layer, and external service integrations.
+
+The client layer is represented by the user's web browser, which executes the React-based Single Page Application (SPA). The frontend provides an interactive user interface for learning paths, coding practice, mock tests, interview preparation, dashboards, and portfolio management. Since the application is implemented as a Single Page Application, navigation between pages occurs dynamically without requiring complete page reloads.
+
+Communication between the frontend and backend is performed through a centralized API client. This component is responsible for sending HTTP requests, attaching JSON Web Token (JWT) authentication headers, handling server responses, refreshing expired access tokens, and maintaining consistent communication with backend services.
+
+The backend is implemented using Django and Django REST Framework (DRF). It is logically divided into two applications. The Accounts application manages authentication, authorization, user profiles, and session management, whereas the Core application implements the primary business logic of PrepSmart, including learning management, coding practice, dashboards, interview preparation, company readiness analysis, and portfolio generation.
+
+Persistent data storage is handled using Django ORM, which maps Python models to relational database tables. The ORM provides database abstraction, ensuring portability, improved security, and simplified database operations. User information, assessments, interview sessions, coding submissions, analytical reports, and placement preparation records are stored and managed through this layer.
+
+The platform also integrates several external services to extend its functionality. The Kontests API is used to synchronize upcoming programming contests from multiple competitive coding platforms. The Groq API provides AI-powered interview feedback and intelligent explanations whenever the corresponding API key is configured. Additionally, a local subprocess-based code execution engine compiles and executes user-submitted programs in a controlled environment before returning execution results to the frontend.
+
+This modular architecture enables each component to evolve independently while maintaining seamless communication with other system modules. The resulting design improves reliability, maintainability, scalability, and facilitates future feature expansion.
+
+\section{Five-Layer Software Architecture}
+
+PrepSmart follows a five-layer software architecture that separates the system into independent layers based on their responsibilities. Each layer performs a specific set of functions and communicates only with adjacent layers through well-defined interfaces. This layered approach improves modularity, maintainability, scalability, and simplifies future enhancements by reducing dependencies between different components of the system.
+
+The layered architecture enables frontend development, backend development, database management, and external service integration to evolve independently without affecting the overall functionality of the platform.
+
+Figure~\ref{fig:five_layer_architecture} illustrates the five-layer architecture adopted for the PrepSmart platform.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Media/Chapter 3/13 Five-Layer Software Architecture.jpg}
+\caption{Five-Layer Software Architecture of PrepSmart}
+\label{fig:five_layer_architecture}
+\end{figure}
+
+The architecture is organized into five logical layers, namely the Presentation Layer, API Layer, Business Logic Layer, Data Access Layer, and External Service Layer. Each layer is responsible for a specific functionality and communicates with the neighboring layers through standardized interfaces.
+
+\subsection{Presentation Layer}
+
+The Presentation Layer consists of the React-based Single Page Application (SPA), which provides an interactive and responsive user interface for students. This layer handles page navigation, user interaction, form validation, state management, and visualization of placement preparation data. Users interact with all modules of PrepSmart through this layer without directly accessing backend services.
+
+\subsection{API Layer}
+
+The API Layer acts as the communication bridge between the frontend and backend. It consists of RESTful APIs developed using Django REST Framework (DRF). All requests from the frontend, including authentication, dashboard access, coding submissions, mock tests, and interview sessions, are routed through this layer. The API Layer also validates authentication tokens and returns standardized JSON responses.
+
+\subsection{Business Logic Layer}
+
+The Business Logic Layer implements the core functionality of PrepSmart. This layer processes user requests, manages placement preparation workflows, evaluates coding submissions, tracks learning progress, generates analytical reports, and coordinates AI-assisted interview sessions. Separating business logic from the presentation layer improves code reusability and maintainability.
+
+\subsection{Data Access Layer}
+
+The Data Access Layer is implemented using Django ORM, which provides an abstraction between the application and the underlying relational database. Instead of executing raw SQL queries, the application performs database operations through ORM models. This improves portability, enhances security against SQL injection attacks, and simplifies database management.
+
+\subsection{External Service Layer}
+
+The External Service Layer integrates third-party services that extend the capabilities of the platform. The Kontests API provides information about upcoming programming contests, the Groq API enables AI-assisted interview evaluation and explanations, and the local code execution engine securely compiles and executes programming solutions submitted by users. Keeping these integrations separate from the core application improves modularity and simplifies future enhancements.
+
+The layered architecture adopted in PrepSmart offers several advantages:
+
+\begin{itemize}
+\item Clear separation of responsibilities among software components.
+\item Improved modularity and maintainability.
+\item Easier debugging and testing of individual layers.
+\item Enhanced scalability through independent development of each layer.
+\item Improved security by restricting direct access to business logic and database operations.
+\item Simplified integration of new external services without affecting existing modules.
+\end{itemize}
+
+\section{High-Level Software Architecture}
+
+The high-level software architecture of PrepSmart illustrates the major software components of the system and the communication among them. The architecture follows a distributed client-server model, where the frontend, backend, database, and external services operate as independent modules while communicating through RESTful APIs.
+
+The architecture has been designed to ensure loose coupling between system components, thereby improving maintainability, scalability, security, and ease of deployment. Each layer performs a well-defined responsibility, allowing future enhancements to be incorporated without significantly affecting existing modules.
+
+Figure~\ref{fig:high_level_architecture} presents the high-level software architecture adopted in the PrepSmart platform.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Media/Chapter 3/3 High-Level Software Architecture (Client–Backend–Data–External)}
+\caption{High-Level Software Architecture of PrepSmart}
+\label{fig:high_level_architecture}
+\end{figure}
+
+The software architecture is organized into four primary subsystems: the Client Layer, Backend Layer, Data Layer, and External Service Layer. These subsystems cooperate to provide a secure, responsive, and scalable placement preparation platform.
+
+\subsection{Client Layer}
+
+The Client Layer consists of the user's web browser and the React-based Single Page Application (SPA). It provides an interactive graphical user interface through which users perform activities such as authentication, topic learning, coding practice, mock tests, interview preparation, dashboard visualization, resume creation, and portfolio management. User preferences, authentication tokens, and temporary application data are stored in the browser's local storage to improve responsiveness and maintain user sessions.
+
+\subsection{Backend Layer}
+
+The Backend Layer is implemented using Django and Django REST Framework (DRF). It exposes RESTful API endpoints that process incoming requests from the frontend, enforce authentication and authorization, execute business logic, and generate JSON responses. The backend is further divided into separate applications, including the Accounts module for authentication and user management, and the Core module for placement preparation functionalities.
+
+\subsection{Data Layer}
+
+The Data Layer is responsible for persistent storage of application data. Django ORM provides an abstraction between the backend and the relational database, allowing models to be mapped directly to database tables. The database stores user accounts, learning progress, coding submissions, interview sessions, company preparation records, mock test results, dashboards, resumes, portfolios, and other application data.
+
+Static files, uploaded media, and application logs are also maintained separately to improve organization and simplify deployment.
+
+\subsection{External Service Layer}
+
+The External Service Layer extends the functionality of PrepSmart by integrating third-party services. The Kontests API provides live information about upcoming programming contests, while the Groq API generates AI-assisted interview questions, explanations, and feedback whenever AI functionality is enabled. The local code execution environment compiles and executes user-submitted programs securely, returning execution results to the backend for evaluation and display.
+
+The modular organization of these services allows external integrations to be modified or replaced without affecting the internal architecture of the platform.
+
+The proposed high-level software architecture provides several benefits:
+
+\begin{itemize}
+\item Separation of presentation, business logic, data management, and external services.
+\item Improved scalability through independent software modules.
+\item Enhanced maintainability due to modular development practices.
+\item Simplified deployment and future system upgrades.
+\item Secure communication using authenticated RESTful APIs.
+\item Easy integration of AI services and external APIs without modifying core application logic.
+\end{itemize}
+
+\section{Use Case Diagram}
+
+A Use Case Diagram is a behavioral UML diagram that illustrates the interactions between different users (actors) and the functionalities provided by the system. It provides a high-level view of the system from the user's perspective and helps identify the major services offered by the application.
+
+The PrepSmart platform supports multiple categories of users, each having different roles and privileges. The primary actors are the Guest User, Student User, and Administrator. Each actor interacts with specific modules according to the permissions assigned within the system.
+
+Figure~\ref{fig:use_case_diagram} presents the use case diagram of the PrepSmart platform.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.50\textwidth]{Media/Chapter 3/5 Use Case Diagram.jpg}
+\caption{Use Case Diagram of PrepSmart}
+\label{fig:use_case_diagram}
+\end{figure}
+
+The use case diagram illustrates the interactions between the three major actors and the functionalities available within the PrepSmart platform.
+
+\subsection{Guest User}
+
+A Guest User can access the public landing page of the application and explore limited publicly available information. Guests can also view publicly shared portfolios and digital passports generated by registered users. To access personalized placement preparation services, the guest must complete the registration process and authenticate into the system.
+
+\subsection{Student User}
+
+The Student User is the primary actor of the system and has access to all placement preparation features after successful authentication. Students can manage their personal profiles, follow structured learning paths, solve coding problems, participate in mock tests, attend AI-assisted interview sessions, monitor their preparation progress through analytical dashboards, prepare for company-specific recruitment processes, generate resumes and portfolios, and share their achievements using public portfolio links.
+
+The platform continuously tracks student activities and updates their progress automatically, enabling personalized recommendations and readiness analysis.
+
+\subsection{Administrator}
+
+The Administrator manages the overall operation of the platform. Administrative responsibilities include managing users, maintaining learning resources, monitoring coding problems, updating placement content, supervising company preparation modules, and ensuring the smooth functioning of backend services. Administrative users also monitor system activity and maintain data consistency throughout the platform.
+
+The major use cases supported by PrepSmart include:
+
+\begin{itemize}
+    \item User Registration and Login
+    \item User Profile Management
+    \item Dashboard Visualization
+    \item Structured Learning Paths
+    \item Topic-wise Quiz Practice
+    \item Mock Test Participation
+    \item Coding Practice and Code Execution
+    \item AI-based Interview Preparation
+    \item Company Readiness Analysis
+    \item Resume Generation
+    \item Portfolio Management
+    \item Public Portfolio and Passport Sharing
+    \item Administrative Content Management
+\end{itemize}
+
+The use case model provides several advantages during software development:
+
+\begin{itemize}
+    \item Clearly identifies different categories of system users.
+    \item Defines the responsibilities and permissions of each actor.
+    \item Simplifies requirement validation during system analysis.
+    \item Serves as a foundation for designing application workflows.
+    \item Improves communication between developers and stakeholders.
+\end{itemize}
+
+\section{Data Flow Diagram}
+
+A Data Flow Diagram (DFD) illustrates how information flows between different components of a software system. Unlike architectural diagrams that describe the structural organization of software components, a DFD focuses on the movement of data between external entities, system processes, data stores, and external services.
+
+The Level-0 Data Flow Diagram of PrepSmart presents the overall interaction between the student, the React frontend, the Django REST backend, the relational database, and external services used by the platform.
+
+Figure~\ref{fig:dfd_level0} illustrates the Level-0 Data Flow Diagram of the proposed system.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Media/Chapter 3/8 Data Flow Diagram (Level 0).jpg}
+\caption{Level-0 Data Flow Diagram of PrepSmart}
+\label{fig:dfd_level0}
+\end{figure}
+
+The Level-0 Data Flow Diagram consists of five major components, namely the User, React Single Page Application, Django REST API, Database, and External Services.
+
+The User represents the primary external entity interacting with the system. Students perform activities such as registration, authentication, coding practice, mock tests, interview preparation, dashboard analysis, resume generation, and portfolio management through the user interface.
+
+The React Single Page Application acts as the presentation layer of the system. It receives user inputs, performs client-side validation, manages application state, and communicates with the backend through RESTful API requests. The frontend never communicates directly with the database, ensuring proper separation of concerns and improved security.
+
+The Django REST API serves as the central processing component of the system. It authenticates users using JSON Web Tokens (JWT), validates incoming requests, executes business logic, interacts with the database using Django ORM, and returns structured JSON responses to the frontend. Nearly all business operations within PrepSmart are coordinated through this layer.
+
+The Database stores all persistent information required by the platform, including user profiles, learning progress, coding submissions, mock test attempts, interview sessions, portfolios, resumes, dashboards, company preparation records, and analytical data. Django ORM manages all database interactions, eliminating the need for direct SQL queries.
+
+The External Services component includes the Groq API for AI-assisted interview feedback, the Kontests API for synchronizing programming contests, and the local code execution engine for compiling and evaluating user-submitted programming solutions. These services extend the capabilities of PrepSmart while remaining loosely coupled with the core application.
+
+\subsection{Working of the Data Flow}
+
+The overall flow of information within the PrepSmart platform follows a sequential client-server communication model.
+
+\begin{enumerate}
+    \item The user initiates an operation through the React web interface.
+    \item The frontend validates the request and forwards it to the Django REST API.
+    \item The backend authenticates the request using JWT tokens whenever authentication is required.
+    \item The requested business logic is executed within the appropriate backend module.
+    \item Database operations are performed using Django ORM.
+    \item When necessary, external services such as the Groq API, Kontests API, or the local code execution engine are invoked.
+    \item The processed result is returned as a JSON response to the frontend.
+    \item The frontend updates the user interface dynamically without reloading the page.
+\end{enumerate}
+
+\subsection{Advantages of the Data Flow Design}
+
+The proposed data flow architecture offers several advantages:
+
+\begin{itemize}
+    \item Centralized processing of all client requests.
+    \item Secure communication using authenticated REST APIs.
+    \item Clear separation between presentation, business logic, and data management.
+    \item Efficient interaction with external AI and coding services.
+    \item Dynamic updating of user interfaces without full page refreshes.
+    \item Scalable architecture suitable for future feature additions.
+\end{itemize}
+
+\section{Class Diagram}
+
+A Class Diagram is one of the most important structural diagrams in the Unified Modeling Language (UML). It represents the static structure of the software by illustrating the classes, their attributes, and the relationships among them. The class diagram provides a blueprint for the implementation of the system and demonstrates how different software components collaborate to achieve the required functionality.
+
+In PrepSmart, the class diagram is derived directly from the Django data models and business entities implemented during development. It represents the core classes responsible for user management, placement preparation, coding practice, assessments, interview management, career profile generation, and progress tracking.
+
+Figure~\ref{fig:class_diagram} illustrates the class diagram of the PrepSmart platform.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Media/Chapter 3/6 Class Diagram.jpg}
+\caption{Class Diagram of PrepSmart}
+\label{fig:class_diagram}
+\end{figure}
+
+The class diagram is organized into multiple functional groups that collectively represent the object-oriented design of the PrepSmart platform. Each class encapsulates specific data and responsibilities while interacting with other classes through well-defined relationships.
+
+The \textbf{User} class serves as the central entity of the system. It maintains authentication information and forms the foundation for almost every module within the application. Each registered user is associated with a single user profile, placement passport, portfolio, and learning statistics while maintaining one-to-many relationships with activities such as coding submissions, interview sessions, mock test attempts, and daily learning goals.
+
+The \textbf{UserProfile} class stores academic and personal information including educational details, technical skills, target companies, placement goals, and user preferences. This information is utilized by various recommendation and analytical modules throughout the platform.
+
+The learning management subsystem is represented through the \textbf{Track}, \textbf{Topic}, \textbf{Question}, and \textbf{Test} classes. Tracks organize placement preparation into multiple learning domains, while each topic contains educational resources, quizzes, and prerequisite relationships. Questions and tests evaluate student understanding and contribute to progress analysis.
+
+The coding practice subsystem consists of the \textbf{CodingProblem} and \textbf{CodeSubmission} classes. CodingProblem stores programming challenges, test cases, difficulty levels, and related metadata, whereas CodeSubmission records the programs submitted by users, execution results, runtime statistics, memory usage, and submission status.
+
+The interview preparation subsystem is modeled using the \textbf{InterviewSession} and \textbf{InterviewQA} classes. InterviewSession maintains the overall interview configuration and progress, while InterviewQA records individual questions, user responses, AI-generated feedback, evaluation scores, and interview outcomes.
+
+Career development features are represented through the \textbf{UserPortfolio} and \textbf{UserPassport} classes. These classes maintain employability metrics, project information, portfolio visibility, recruiter readiness indicators, and publicly shareable profile information. These modules assist students in presenting their skills and achievements effectively during placement activities.
+
+The class diagram is organized into multiple functional groups that collectively represent the object-oriented design of the PrepSmart platform. Each class encapsulates specific data and responsibilities while interacting with other classes through well-defined relationships.
+
+The \textbf{User} class serves as the central entity of the system. It maintains authentication information and forms the foundation for almost every module within the application. Each registered user is associated with a single user profile, placement passport, portfolio, and learning statistics while maintaining one-to-many relationships with activities such as coding submissions, interview sessions, mock test attempts, and daily learning goals.
+
+The \textbf{UserProfile} class stores academic and personal information including educational details, technical skills, target companies, placement goals, and user preferences. This information is utilized by various recommendation and analytical modules throughout the platform.
+
+The learning management subsystem is represented through the \textbf{Track}, \textbf{Topic}, \textbf{Question}, and \textbf{Test} classes. Tracks organize placement preparation into multiple learning domains, while each topic contains educational resources, quizzes, and prerequisite relationships. Questions and tests evaluate student understanding and contribute to progress analysis.
+
+The coding practice subsystem consists of the \textbf{CodingProblem} and \textbf{CodeSubmission} classes. CodingProblem stores programming challenges, test cases, difficulty levels, and related metadata, whereas CodeSubmission records the programs submitted by users, execution results, runtime statistics, memory usage, and submission status.
+
+The interview preparation subsystem is modeled using the \textbf{InterviewSession} and \textbf{InterviewQA} classes. InterviewSession maintains the overall interview configuration and progress, while InterviewQA records individual questions, user responses, AI-generated feedback, evaluation scores, and interview outcomes.
+
+Career development features are represented through the \textbf{UserPortfolio} and \textbf{UserPassport} classes. These classes maintain employability metrics, project information, portfolio visibility, recruiter readiness indicators, and publicly shareable profile information. These modules assist students in presenting their skills and achievements effectively during placement activities.
+
+\subsection{Advantages of the Class Design}
+
+The object-oriented class design adopted in PrepSmart provides several advantages:
+
+\begin{itemize}
+\item Promotes modular software development.
+\item Improves code reusability through well-defined classes.
+\item Simplifies maintenance and future feature additions.
+\item Supports scalability by separating different functional modules.
+\item Enhances readability and organization of the software architecture.
+\item Facilitates easier debugging and testing through modular implementation.
+\end{itemize}
+
+\section{Database Design}
+
+The database is one of the most critical components of the PrepSmart platform, as it stores all information related to users, learning activities, coding practice, assessments, interview sessions, company preparation, portfolios, and analytical reports. A well-designed database ensures data consistency, minimizes redundancy, and enables efficient retrieval of information.
+
+PrepSmart utilizes a relational database managed through Django Object Relational Mapping (ORM). Instead of directly writing SQL queries, Django ORM maps Python models to relational database tables, thereby simplifying database operations while improving portability and maintainability.
+
+Figure~\ref{fig:er_diagram} presents the Entity Relationship (ER) Diagram of the PrepSmart database.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Media/Chapter 3/4 Entity Relationship Diagram (ERD).jpg}
+\caption{Entity Relationship Diagram of PrepSmart}
+\label{fig:er_diagram}
+\end{figure}
+
+\subsection{Major Database Entities}
+
+The PrepSmart database consists of multiple interconnected entities that collectively support the placement preparation ecosystem. The most important entities are described below.
+
+\begin{itemize}
+
+\item \textbf{User}
+
+Stores authentication credentials and serves as the primary entity of the entire system. Every registered student is represented by a unique user record.
+
+\vspace{0.1cm}
+
+\item \textbf{UserProfile}
+
+Stores personal details, academic information, technical skills, CGPA, target companies, weekly study goals, and user preferences.
+
+\vspace{0.1cm}
+
+\item \textbf{Track}
+
+Represents different learning domains such as Data Structures, Algorithms, DBMS, Operating Systems, Aptitude, and Interview Preparation.
+
+\vspace{0.1cm}
+
+\item \textbf{Topic}
+
+Stores learning topics within each track together with descriptions, prerequisites, learning order, and interview importance.
+
+\vspace{0.1cm}
+
+\item \textbf{Question}
+
+Contains multiple-choice questions, explanations, difficulty levels, and correct answers used in quizzes and mock tests.
+
+\vspace{0.1cm}
+
+\item \textbf{Test}
+
+Represents mock tests and assessments that evaluate student preparation across multiple topics.
+
+\vspace{0.1cm}
+
+\item \textbf{CodingProblem}
+
+Stores coding challenges, supported programming languages, starter code, constraints, and evaluation criteria.
+
+\vspace{0.1cm}
+
+\item \textbf{CodeSubmission}
+
+Maintains submitted source code, execution results, runtime statistics, memory consumption, and submission status.
+
+\vspace{0.1cm}
+
+\item \textbf{InterviewSession}
+
+Stores AI interview sessions, interview categories, evaluation scores, and overall interview progress.
+
+\vspace{0.1cm}
+
+\item \textbf{UserPortfolio}
+
+Stores portfolio information, projects, public links, and recruiter-oriented presentation details.
+
+\end{itemize}
+
+\subsection{Relationship Between Entities}
+
+The Entity Relationship Diagram illustrates several one-to-one and one-to-many relationships among the database entities.
+
+The User entity acts as the central entity and maintains one-to-one relationships with UserProfile, UserPassport, UserPortfolio, and UserStreak. It also maintains one-to-many relationships with DailyGoal, TestAttempt, InterviewSession, CodeSubmission, UserAnswer, ActivityEvent, and CompanyTarget.
+
+Each Track contains multiple Topics, while every Topic consists of multiple Questions, Topic Sections, and Learning Resources. Tests are associated with multiple Topics and Questions to facilitate comprehensive assessments.
+
+Similarly, every CodingProblem can have multiple Test Cases and multiple Code Submissions, whereas every InterviewSession contains several Interview Questions and AI-generated evaluation records. These relationships ensure efficient organization of educational content while maintaining database normalization and referential integrity.
+
+\subsection{Database Features}
+
+The database design adopted in PrepSmart provides several advantages.
+
+\begin{itemize}
+
+\item Proper normalization reduces redundancy and improves storage efficiency.
+
+\item Foreign key relationships maintain referential integrity among entities.
+
+\item Django ORM provides database abstraction without requiring raw SQL queries.
+
+\item Modular entity design simplifies maintenance and future feature expansion.
+
+\item Indexed relationships improve query performance and dashboard generation.
+
+\item The schema supports scalability for additional learning modules, AI services, and company preparation features.
+
+\end{itemize}
+
+\subsection{Advantages of the Database Design}
+
+The relational database design adopted in PrepSmart provides the following benefits.
+
+\begin{itemize}
+
+\item Efficient storage and retrieval of placement preparation data.
+
+\item Secure management of user information.
+
+\item Easy integration with Django REST Framework.
+
+\item Reduced data duplication through normalization.
+
+\item Improved scalability for future enhancements.
+
+\item Reliable transaction management using relational database principles.
+
+\end{itemize}
+
+\section{Chapter Summary}
+
+This chapter presented the complete system analysis and design of the PrepSmart platform. It discussed the functional and non-functional requirements, feasibility analysis, overall system architecture, layered software architecture, high-level software organization, use case model, data flow, object-oriented class structure, and database design.
+
+The presented UML diagrams and architectural models provide a comprehensive blueprint of the proposed system and illustrate the interactions among various software components. The modular architecture, well-structured database, and layered design ensure that the system is scalable, maintainable, secure, and capable of supporting future enhancements.
+
+The next chapter describes the implementation of the proposed system, including frontend development, backend APIs, authentication mechanism, coding environment, AI interview module, dashboard analytics, and other core functionalities.

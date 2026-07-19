@@ -1,6 +1,6 @@
-PWD C:\Users\neera\Downloads\Final_Report_UI21CS35 (1)
+PWD E:\SDE_Learnings\Final_Report_UI21CS35\Final_Report_UI21CS35
 INPUT C:\Users\neera\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\neera\Downloads\Final_Report_UI21CS35 (1)\main.tex
+INPUT e:\SDE_Learnings\Final_Report_UI21CS35\Final_Report_UI21CS35\main.tex
 OUTPUT main.log
 INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
@@ -12,6 +12,16 @@ INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.st
 INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
 INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\pifont.sty
+INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\pifont.sty
+INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\upzd.fd
+INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\upzd.fd
+INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\upzd.fd
+INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\zapfding\pzdr.tfm
+INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\upsy.fd
+INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\upsy.fd
+INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\upsy.fd
+INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
 INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
 INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
@@ -477,144 +487,94 @@ OUTPUT Chapters\chap_2.aux
 INPUT .\Chapters\chap_2.tex
 INPUT .\Chapters\chap_2.tex
 INPUT Chapters\chap_2.tex
-INPUT .\Media\Chapter 2\2.1.png
-INPUT .\Media\Chapter 2\2.1.png
-INPUT .\Media\Chapter 2\2.1.png
-INPUT .\Media\Chapter 2\2.1.png
-INPUT .\Media\Chapter 2\2.1.png
-INPUT .\Media\Chapter 2\2.1.png
-INPUT .\Media\Chapter 2\2.1.png
-INPUT .\Media\Chapter 2\2.2.png
-INPUT .\Media\Chapter 2\2.2.png
-INPUT .\Media\Chapter 2\2.2.png
-INPUT .\Media\Chapter 2\2.2.png
-INPUT .\Media\Chapter 2\2.2.png
-INPUT .\Media\Chapter 2\2.2.png
-INPUT .\Media\Chapter 2\2.2.png
 INPUT .\Chapters\chap_3.tex
 INPUT .\Chapters\chap_3.tex
 OUTPUT Chapters\chap_3.aux
 INPUT .\Chapters\chap_3.tex
 INPUT .\Chapters\chap_3.tex
 INPUT Chapters\chap_3.tex
+INPUT .\Media\Chapter 3\1 Overall System Architecture.jpg
+INPUT .\Media\Chapter 3\1 Overall System Architecture.jpg
+INPUT .\Media\Chapter 3\1 Overall System Architecture.jpg
+INPUT .\Media\Chapter 3\1 Overall System Architecture.jpg
+INPUT .\Media\Chapter 3\1 Overall System Architecture.jpg
+INPUT .\Media\Chapter 3\1 Overall System Architecture.jpg
+INPUT .\Media\Chapter 3\1 Overall System Architecture.jpg
+INPUT .\Media\Chapter 3\13 Five-Layer Software Architecture.jpg
+INPUT .\Media\Chapter 3\13 Five-Layer Software Architecture.jpg
+INPUT .\Media\Chapter 3\13 Five-Layer Software Architecture.jpg
+INPUT .\Media\Chapter 3\13 Five-Layer Software Architecture.jpg
+INPUT .\Media\Chapter 3\13 Five-Layer Software Architecture.jpg
+INPUT .\Media\Chapter 3\13 Five-Layer Software Architecture.jpg
+INPUT .\Media\Chapter 3\13 Five-Layer Software Architecture.jpg
+INPUT .\Media\Chapter 3\3 High-Level Software Architecture (Client–Backend–Data–External).jpg
+INPUT .\Media\Chapter 3\3 High-Level Software Architecture (Client–Backend–Data–External).jpg
+INPUT .\Media\Chapter 3\3 High-Level Software Architecture (Client–Backend–Data–External).jpg
+INPUT .\Media\Chapter 3\3 High-Level Software Architecture (Client–Backend–Data–External).jpg
+INPUT .\Media\Chapter 3\3 High-Level Software Architecture (Client–Backend–Data–External).jpg
+INPUT .\Media\Chapter 3\3 High-Level Software Architecture (Client–Backend–Data–External).jpg
+INPUT .\Media\Chapter 3\5 Use Case Diagram.jpg
+INPUT .\Media\Chapter 3\5 Use Case Diagram.jpg
+INPUT .\Media\Chapter 3\5 Use Case Diagram.jpg
+INPUT .\Media\Chapter 3\5 Use Case Diagram.jpg
+INPUT .\Media\Chapter 3\5 Use Case Diagram.jpg
+INPUT .\Media\Chapter 3\5 Use Case Diagram.jpg
+INPUT .\Media\Chapter 3\5 Use Case Diagram.jpg
+INPUT .\Media\Chapter 3\8 Data Flow Diagram (Level 0).jpg
+INPUT .\Media\Chapter 3\8 Data Flow Diagram (Level 0).jpg
+INPUT .\Media\Chapter 3\8 Data Flow Diagram (Level 0).jpg
+INPUT .\Media\Chapter 3\8 Data Flow Diagram (Level 0).jpg
+INPUT .\Media\Chapter 3\8 Data Flow Diagram (Level 0).jpg
+INPUT .\Media\Chapter 3\8 Data Flow Diagram (Level 0).jpg
+INPUT .\Media\Chapter 3\8 Data Flow Diagram (Level 0).jpg
+INPUT .\Media\Chapter 3\6 Class Diagram.jpg
+INPUT .\Media\Chapter 3\6 Class Diagram.jpg
+INPUT .\Media\Chapter 3\6 Class Diagram.jpg
+INPUT .\Media\Chapter 3\6 Class Diagram.jpg
+INPUT .\Media\Chapter 3\6 Class Diagram.jpg
+INPUT .\Media\Chapter 3\6 Class Diagram.jpg
+INPUT .\Media\Chapter 3\6 Class Diagram.jpg
+INPUT .\Media\Chapter 3\4 Entity Relationship Diagram (ERD).jpg
+INPUT .\Media\Chapter 3\4 Entity Relationship Diagram (ERD).jpg
+INPUT .\Media\Chapter 3\4 Entity Relationship Diagram (ERD).jpg
+INPUT .\Media\Chapter 3\4 Entity Relationship Diagram (ERD).jpg
+INPUT .\Media\Chapter 3\4 Entity Relationship Diagram (ERD).jpg
+INPUT .\Media\Chapter 3\4 Entity Relationship Diagram (ERD).jpg
+INPUT .\Media\Chapter 3\4 Entity Relationship Diagram (ERD).jpg
 INPUT .\Chapters\chap_4.tex
 INPUT .\Chapters\chap_4.tex
 OUTPUT Chapters\chap_4.aux
 INPUT .\Chapters\chap_4.tex
 INPUT .\Chapters\chap_4.tex
 INPUT Chapters\chap_4.tex
-INPUT .\Media\Chapter 4\1.png
-INPUT .\Media\Chapter 4\1.png
-INPUT .\Media\Chapter 4\1.png
-INPUT .\Media\Chapter 4\1.png
-INPUT .\Media\Chapter 4\1.png
-INPUT .\Media\Chapter 4\1.png
-INPUT .\Media\Chapter 4\1.png
-INPUT .\Media\Chapter 4\2.png
-INPUT .\Media\Chapter 4\2.png
-INPUT .\Media\Chapter 4\2.png
-INPUT .\Media\Chapter 4\2.png
-INPUT .\Media\Chapter 4\2.png
-INPUT .\Media\Chapter 4\2.png
-INPUT .\Media\Chapter 4\2.png
-INPUT .\Media\Chapter 4\dash.png
-INPUT .\Media\Chapter 4\dash.png
-INPUT .\Media\Chapter 4\dash.png
-INPUT .\Media\Chapter 4\dash.png
-INPUT .\Media\Chapter 4\dash.png
-INPUT .\Media\Chapter 4\dash.png
-INPUT .\Media\Chapter 4\dash.png
-INPUT .\Media\Chapter 4\dash2.png
-INPUT .\Media\Chapter 4\dash2.png
-INPUT .\Media\Chapter 4\dash2.png
-INPUT .\Media\Chapter 4\dash2.png
-INPUT .\Media\Chapter 4\dash2.png
-INPUT .\Media\Chapter 4\dash2.png
-INPUT .\Media\Chapter 4\dash2.png
-INPUT .\Media\Chapter 4\lp.png
-INPUT .\Media\Chapter 4\lp.png
-INPUT .\Media\Chapter 4\lp.png
-INPUT .\Media\Chapter 4\lp.png
-INPUT .\Media\Chapter 4\lp.png
-INPUT .\Media\Chapter 4\lp.png
-INPUT .\Media\Chapter 4\lp.png
-INPUT .\Media\Chapter 4\lp1.png
-INPUT .\Media\Chapter 4\lp1.png
-INPUT .\Media\Chapter 4\lp1.png
-INPUT .\Media\Chapter 4\lp1.png
-INPUT .\Media\Chapter 4\lp1.png
-INPUT .\Media\Chapter 4\lp1.png
-INPUT .\Media\Chapter 4\lp1.png
-INPUT .\Media\Chapter 4\p1.png
-INPUT .\Media\Chapter 4\p1.png
-INPUT .\Media\Chapter 4\p1.png
-INPUT .\Media\Chapter 4\p1.png
-INPUT .\Media\Chapter 4\p1.png
-INPUT .\Media\Chapter 4\p1.png
-INPUT .\Media\Chapter 4\p1.png
-INPUT .\Media\Chapter 4\p2.png
-INPUT .\Media\Chapter 4\p2.png
-INPUT .\Media\Chapter 4\p2.png
-INPUT .\Media\Chapter 4\p2.png
-INPUT .\Media\Chapter 4\p2.png
-INPUT .\Media\Chapter 4\p2.png
-INPUT .\Media\Chapter 4\p2.png
-INPUT .\Media\Chapter 4\m1.png
-INPUT .\Media\Chapter 4\m1.png
-INPUT .\Media\Chapter 4\m1.png
-INPUT .\Media\Chapter 4\m1.png
-INPUT .\Media\Chapter 4\m1.png
-INPUT .\Media\Chapter 4\m1.png
-INPUT .\Media\Chapter 4\m1.png
-INPUT .\Media\Chapter 4\m2.png
-INPUT .\Media\Chapter 4\m2.png
-INPUT .\Media\Chapter 4\m2.png
-INPUT .\Media\Chapter 4\m2.png
-INPUT .\Media\Chapter 4\m2.png
-INPUT .\Media\Chapter 4\m2.png
-INPUT .\Media\Chapter 4\m2.png
-INPUT .\Media\Chapter 4\m3.png
-INPUT .\Media\Chapter 4\m3.png
-INPUT .\Media\Chapter 4\m3.png
-INPUT .\Media\Chapter 4\m3.png
-INPUT .\Media\Chapter 4\m3.png
-INPUT .\Media\Chapter 4\m3.png
-INPUT .\Media\Chapter 4\m3.png
-INPUT .\Media\Chapter 4\code.png
-INPUT .\Media\Chapter 4\code.png
-INPUT .\Media\Chapter 4\code.png
-INPUT .\Media\Chapter 4\code.png
-INPUT .\Media\Chapter 4\code.png
-INPUT .\Media\Chapter 4\code.png
-INPUT .\Media\Chapter 4\code.png
-INPUT .\Media\Chapter 4\ai1.png
-INPUT .\Media\Chapter 4\ai1.png
-INPUT .\Media\Chapter 4\ai1.png
-INPUT .\Media\Chapter 4\ai1.png
-INPUT .\Media\Chapter 4\ai1.png
-INPUT .\Media\Chapter 4\ai1.png
-INPUT .\Media\Chapter 4\ai1.png
-INPUT .\Media\Chapter 4\ai2.png
-INPUT .\Media\Chapter 4\ai2.png
-INPUT .\Media\Chapter 4\ai2.png
-INPUT .\Media\Chapter 4\ai2.png
-INPUT .\Media\Chapter 4\ai2.png
-INPUT .\Media\Chapter 4\ai2.png
-INPUT .\Media\Chapter 4\ai2.png
-INPUT .\Media\Chapter 4\ana.png
-INPUT .\Media\Chapter 4\ana.png
-INPUT .\Media\Chapter 4\ana.png
-INPUT .\Media\Chapter 4\ana.png
-INPUT .\Media\Chapter 4\ana.png
-INPUT .\Media\Chapter 4\ana.png
-INPUT .\Media\Chapter 4\ana.png
-INPUT .\Media\Chapter 4\com.png
-INPUT .\Media\Chapter 4\com.png
-INPUT .\Media\Chapter 4\com.png
-INPUT .\Media\Chapter 4\com.png
-INPUT .\Media\Chapter 4\com.png
-INPUT .\Media\Chapter 4\com.png
-INPUT .\Media\Chapter 4\com.png
+INPUT .\Media\Chapter 4\2 React Component Architecture.jpg
+INPUT .\Media\Chapter 4\2 React Component Architecture.jpg
+INPUT .\Media\Chapter 4\2 React Component Architecture.jpg
+INPUT .\Media\Chapter 4\2 React Component Architecture.jpg
+INPUT .\Media\Chapter 4\2 React Component Architecture.jpg
+INPUT .\Media\Chapter 4\2 React Component Architecture.jpg
+INPUT .\Media\Chapter 4\2 React Component Architecture.jpg
+INPUT .\Media\Chapter 4\7 API Request Flow.jpg
+INPUT .\Media\Chapter 4\7 API Request Flow.jpg
+INPUT .\Media\Chapter 4\7 API Request Flow.jpg
+INPUT .\Media\Chapter 4\7 API Request Flow.jpg
+INPUT .\Media\Chapter 4\7 API Request Flow.jpg
+INPUT .\Media\Chapter 4\7 API Request Flow.jpg
+INPUT .\Media\Chapter 4\7 API Request Flow.jpg
+INPUT .\Media\Chapter 4\9 Authentication Sequence.jpg
+INPUT .\Media\Chapter 4\9 Authentication Sequence.jpg
+INPUT .\Media\Chapter 4\9 Authentication Sequence.jpg
+INPUT .\Media\Chapter 4\9 Authentication Sequence.jpg
+INPUT .\Media\Chapter 4\9 Authentication Sequence.jpg
+INPUT .\Media\Chapter 4\9 Authentication Sequence.jpg
+INPUT .\Media\Chapter 4\9 Authentication Sequence.jpg
+INPUT .\Media\Chapter 4\11 Preparation Journey Workflow.jpg
+INPUT .\Media\Chapter 4\11 Preparation Journey Workflow.jpg
+INPUT .\Media\Chapter 4\11 Preparation Journey Workflow.jpg
+INPUT .\Media\Chapter 4\11 Preparation Journey Workflow.jpg
+INPUT .\Media\Chapter 4\11 Preparation Journey Workflow.jpg
+INPUT .\Media\Chapter 4\11 Preparation Journey Workflow.jpg
+INPUT .\Media\Chapter 4\11 Preparation Journey Workflow.jpg
 INPUT .\Chapters\chap_5.tex
 INPUT .\Chapters\chap_5.tex
 OUTPUT Chapters\chap_5.aux
@@ -699,3 +659,5 @@ INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
 INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\fonts\type1\urw\zapfding\uzdr.pfb
+INPUT C:\Users\neera\AppData\Local\Programs\MiKTeX\fonts\type1\urw\zapfding\uzdr.pfb

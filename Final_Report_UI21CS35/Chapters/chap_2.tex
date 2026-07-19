@@ -1,103 +1,112 @@
-\chapter{System Architecture}
+\chapter{Literature Survey}
 
-\section{Overview}
+\section{Introduction}
 
-The \textbf{PrepSmart platform} follows a \textbf{client-server architecture}, where the frontend and backend operate as separate layers and communicate through well-defined APIs. This separation ensures \textbf{modularity, scalability, and maintainability} of the system.
+The literature survey is an essential phase of software development that involves studying existing systems, research contributions, and technologies related to the proposed project. It helps in understanding current approaches, identifying their strengths and limitations, and recognizing the research gap that motivates the development of a new solution. For the PrepSmart platform, the literature survey focuses on modern placement preparation platforms, online learning systems, coding practice portals, interview preparation resources, and educational technologies that support campus recruitment.
 
-\vspace{0.2cm}
+Over the past decade, digital learning platforms have significantly transformed placement preparation by providing students with online coding environments, structured learning materials, mock assessments, interview experiences, and skill development resources. These platforms have improved accessibility to quality educational content and enabled students to prepare independently from any location. However, most existing systems focus on specific aspects of placement preparation rather than providing a unified learning ecosystem.
 
-The frontend is developed using \textbf{React}, which provides an interactive and dynamic user interface. It handles user interactions, displays data, and communicates with the backend using HTTP requests.
+Students preparing for campus recruitment typically rely on multiple platforms for coding practice, aptitude preparation, interview guidance, resume development, and progress tracking. This fragmented approach often results in inconsistent preparation, inefficient resource management, and difficulty in evaluating overall placement readiness. Furthermore, many platforms provide limited personalization and lack integrated analytical features that help students identify strengths and weaknesses throughout their preparation journey.
 
-\vspace{0.2cm}
+The objective of this chapter is to examine widely used placement preparation platforms, analyze their features, identify their limitations, and establish the necessity for a comprehensive platform such as PrepSmart. The findings of this survey provide the foundation for the design and development decisions presented in the subsequent chapters.
 
-The backend is implemented using \textbf{Django REST Framework (DRF)}, which exposes RESTful APIs to manage application logic, handle requests, and process data. The backend is responsible for authentication, business logic, analytics computation, and database operations.
+\section{Review of Existing Placement Preparation Platforms}
 
-\vspace{0.2cm}
+The increasing demand for technical skills has resulted in the emergence of several online platforms that support placement preparation. These platforms provide resources such as programming challenges, interview experiences, technical articles, aptitude questions, and online courses. Although they have significantly improved accessibility to educational content, most of them focus on specific aspects of placement preparation rather than providing a comprehensive solution. The following subsections present a review of widely used placement preparation platforms.
 
-The system uses \textbf{MySQL} as the database for storing user data, learning content, test results, and analytics. Secure communication is ensured through \textbf{JSON Web Tokens (JWT)}, which handle user authentication and authorization.
+\subsection{LeetCode}
 
-\vspace{0.2cm}
+LeetCode is one of the most widely used online coding platforms for technical interview preparation. It provides a large collection of programming problems covering data structures, algorithms, databases, system design, and competitive programming. The platform also offers company-specific interview questions, coding contests, and discussion forums that help students prepare for software engineering interviews.
 
-Additionally, the platform includes a \textbf{local Python execution engine} that allows users to write and execute code within the system. The backend processes code execution requests and returns outputs to the frontend.
+Despite its extensive collection of coding problems, LeetCode primarily focuses on programming practice and interview questions. It does not provide aptitude preparation, resume management, personalized learning paths, interview simulations, or integrated placement analytics, requiring students to depend on additional platforms for complete preparation.
 
-\vspace{0.2cm}
+\subsection{HackerRank}
 
-This architecture ensures efficient communication between components and supports future scalability, including cloud deployment and microservices-based expansion.
+HackerRank is an online platform designed for programming practice, skill assessment, and technical recruitment. It supports multiple programming languages and provides challenges related to algorithms, databases, artificial intelligence, and software development. Organizations also use HackerRank to conduct online coding assessments during recruitment.
 
-\section{System Architecture Diagram}
+Although HackerRank offers an excellent environment for coding practice and technical assessments, it provides limited support for interview preparation, learning progress analysis, resume management, and company-specific preparation. Students must therefore combine HackerRank with other learning resources to prepare comprehensively.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 2/2.1.png}
-    \caption{System Architecture of PrepSmart Platform}
-    \label{fig:sys_arch}
-\end{figure}
+\subsection{GeeksforGeeks}
 
-The system architecture of the \textbf{PrepSmart platform} follows a client-server model. The user interacts with the frontend developed using \textbf{React}, which sends requests to the backend via \textbf{REST APIs}. The backend, built using \textbf{Django REST Framework}, processes these requests, performs business logic, and communicates with the \textbf{MySQL} database for data storage and retrieval.
+GeeksforGeeks is a popular educational platform that provides tutorials, interview preparation articles, coding questions, aptitude resources, and explanations of computer science concepts. It serves as a valuable reference for students preparing for technical interviews by offering extensive theoretical content and programming tutorials.
 
-\vspace{0.2cm}
+However, GeeksforGeeks primarily functions as a learning resource rather than an integrated placement preparation platform. Features such as personalized dashboards, structured preparation tracking, AI-assisted interview practice, and unified progress monitoring are limited.
 
-The system also includes a \textbf{Python-based code execution engine}, which allows users to execute code in real-time. Authentication is handled securely using \textbf{JSON Web Tokens (JWT)}, ensuring protected access to system resources. This modular architecture ensures scalability, maintainability, and efficient data flow across the platform.
+\subsection{InterviewBit}
 
-\section{Architecture Explanation}
+InterviewBit focuses on technical interview preparation through guided learning paths, coding exercises, and interview-oriented programming questions. The platform emphasizes structured learning and provides company-specific interview experiences that assist students in understanding real recruitment processes.
 
-The architecture of the PrepSmart platform consists of three major components: \textbf{Frontend, Backend,} and \textbf{Database}.
+While InterviewBit offers organized learning content and coding practice, it lacks several complementary features such as resume management, portfolio development, AI-assisted interviews, integrated analytics, and comprehensive placement tracking.
 
-\begin{enumerate}
-    \item \textbf{Frontend Layer (React):}\\
-    This layer provides the user interface and handles all user interactions. It includes modules such as login/signup, dashboard, learning modules, mock tests, code editor, and analytics. The frontend communicates with the backend through REST APIs.
+\subsection{LinkedIn Learning}
 
-    \item \textbf{Backend Layer (Django REST Framework):}\\
-    The backend manages application logic, processes requests, and controls data flow. It includes authentication services using JWT, API endpoints for various modules, and analytics computation. The backend ensures secure and efficient communication between frontend and database.
+LinkedIn Learning is an online educational platform offering professional courses across technology, business, communication, and leadership domains. Students can access expert-led video courses to strengthen both technical and soft skills required for career development.
 
-    \item \textbf{Code Execution Engine:}\\
-    The platform includes a local Python execution environment that processes code submitted by users. The backend executes the code and returns the output to the frontend in real-time.
+Although LinkedIn Learning provides high-quality educational content, it is not specifically designed for placement preparation. It does not include integrated coding practice, mock assessments, company-specific preparation, or placement performance analytics within a unified platform.
 
-    \item \textbf{Authentication System:}\\
-    Secure access is provided through JSON Web Tokens (JWT), which authenticate users and manage sessions without storing sensitive data on the server.
-\end{enumerate}
+\section{Comparative Analysis of Existing Platforms}
 
-\vspace{0.2cm}
+Table \ref{tab:comparison} presents a comparative analysis of widely used placement preparation platforms based on important features required during campus recruitment. The comparison highlights that while existing platforms perform well in specific domains such as coding practice or technical learning, none of them provide a unified ecosystem that integrates learning, assessments, coding practice, interview preparation, resume management, and analytical performance tracking within a single application.
 
-The interaction between these components ensures smooth data flow, efficient processing, and a seamless user experience.
+\begin{table}[H]
+\centering
+\caption{Comparison of Existing Placement Preparation Platforms}
+\label{tab:comparison}
+\renewcommand{\arraystretch}{1.25}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|p{5cm}|c|c|c|c|c|c|}
+\hline
+\textbf{Feature} &
+\textbf{LeetCode} &
+\textbf{HackerRank} &
+\textbf{GFG} &
+\textbf{InterviewBit} &
+\textbf{LinkedIn Learning} &
+\textbf{PrepSmart} \\
+\hline
 
-\section{Data Flow}
+Coding Practice & \cmark & \cmark & \cmark & \cmark & \xmark & \cmark \\ \hline
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 2/2.2.png}
-    \caption{Data Flow Diagram of PrepSmart Platform}
-    \label{fig:data_flow}
-\end{figure}
+Structured Learning Paths & \xmark & Limited & \cmark & \cmark & \cmark & \cmark \\ \hline
 
-The data flow in the PrepSmart platform begins with user interactions such as login, practice attempts, or test submissions. These actions are captured by the frontend and sent to the backend through API requests.
+Aptitude Preparation & \xmark & Limited & \cmark & Limited & \xmark & \cmark \\ \hline
 
-\vspace{0.2cm}
+Computer Science Subjects & Limited & Limited & \cmark & \cmark & \cmark & \cmark \\ \hline
 
-The backend processes the request, validates the data, and interacts with the database to store or retrieve relevant information. In the case of coding problems, the backend forwards the code to the Python execution engine and retrieves the output.
+Mock Tests & \xmark & \cmark & Limited & \cmark & \xmark & \cmark \\ \hline
 
-\vspace{0.2cm}
+AI Interview Preparation & \xmark & \xmark & \xmark & \xmark & \xmark & \cmark \\ \hline
 
-The processed data is then sent back to the frontend, where it is displayed to the user. This structured data flow ensures real-time interaction, efficient processing, and accurate performance tracking.
+Resume Management & \xmark & \xmark & \xmark & \xmark & \xmark & \cmark \\ \hline
 
-\section{Data Flow Explanation}
+Portfolio Management & \xmark & \xmark & \xmark & \xmark & \xmark & \cmark \\ \hline
 
-The data flow in the PrepSmart platform follows a structured process that ensures efficient communication between system components.
+Company-Specific Preparation & Limited & Limited & Limited & \cmark & \xmark & \cmark \\ \hline
 
-\vspace{0.2cm}
+Performance Analytics & Limited & Limited & Limited & Limited & \xmark & \cmark \\ \hline
 
-When a user interacts with the frontend, such as logging in, attempting a test, or executing code, a request is sent to the backend via API calls. The backend processes the request, performs necessary computations or validations, and interacts with the database if required.
+Progress Dashboard & \xmark & Limited & \xmark & Limited & \xmark & \cmark \\ \hline
 
-\vspace{0.2cm}
+Single Integrated Platform & \xmark & \xmark & \xmark & \xmark & \xmark & \cmark \\ \hline
 
-For example, during authentication, user credentials are verified, and a JWT token is generated. In the case of coding practice, the submitted code is sent to the backend, executed in the Python environment, and the output is returned to the frontend.
+\end{tabular}
+}
+\end{table}
 
-\vspace{0.2cm}
+\section{Research Gap}
 
-Similarly, analytics data is computed in the backend based on user performance and stored in the database. This data is then fetched and displayed on the dashboard.
+The comparative analysis demonstrates that existing placement preparation platforms primarily focus on individual aspects of learning rather than providing a comprehensive preparation environment. Coding platforms such as LeetCode and HackerRank emphasize programming practice, while educational platforms such as GeeksforGeeks and LinkedIn Learning concentrate on theoretical learning and professional development. InterviewBit offers structured interview preparation but lacks several complementary features required for complete placement readiness.
 
-\vspace{0.2cm}
+A significant limitation observed across these platforms is the absence of an integrated ecosystem that combines structured learning, coding practice, aptitude preparation, interview preparation, resume management, portfolio development, company-specific preparation, and analytical dashboards within a single application. Students are therefore required to use multiple independent platforms, resulting in fragmented learning experiences, inefficient progress tracking, and inconsistent preparation strategies.
 
-This structured data flow ensures reliability, scalability, and real-time feedback for users.
+Another important research gap is the limited use of intelligent analytics for monitoring placement readiness. Existing systems generally provide isolated performance metrics without offering comprehensive insights into learning progress, topic-wise strengths and weaknesses, or overall employability. Similarly, AI-assisted interview preparation and unified career management features remain largely unavailable across existing platforms.
 
-\newpage
+The identified research gap establishes the need for a comprehensive and intelligent placement preparation platform capable of integrating multiple preparation activities into a single ecosystem. PrepSmart has been developed to address these limitations by providing a unified platform that combines learning resources, coding practice, assessments, interview preparation, resume and portfolio management, company-specific preparation, and personalized performance analytics.
+
+\section{Chapter Summary}
+
+This chapter presented a detailed review of existing placement preparation platforms and analyzed their strengths and limitations. A comparative study highlighted that although platforms such as LeetCode, HackerRank, GeeksforGeeks, InterviewBit, and LinkedIn Learning provide valuable learning resources, they primarily focus on specific aspects of placement preparation rather than offering a comprehensive solution.
+
+The analysis identified the absence of a unified platform capable of integrating structured learning, coding practice, assessments, AI-assisted interview preparation, resume management, portfolio development, company-specific preparation, and performance analytics within a single ecosystem. These observations establish the motivation for developing PrepSmart as an integrated and scalable placement preparation platform.
+
+The next chapter presents the system analysis and design of the proposed solution, including requirement analysis, software architecture, database design, UML diagrams, and overall system workflow.

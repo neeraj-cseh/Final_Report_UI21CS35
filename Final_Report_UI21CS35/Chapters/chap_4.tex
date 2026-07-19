@@ -1,225 +1,467 @@
-\chapter{System Implementation}
+\chapter{System Development and Implementation}
+
+\section{Introduction}
+
+This chapter describes the implementation of the proposed Smart Placement Preparation Platform (PrepSmart). Based on the system analysis and design presented in the previous chapter, the platform has been developed using modern web technologies following a modular client-server architecture.
+
+The implementation focuses on providing an integrated environment for placement preparation by combining learning management, coding practice, mock assessments, AI-assisted interview preparation, company readiness analysis, portfolio management, and analytical dashboards within a single application.
+
+The frontend of the platform has been developed using React and Vite, providing a responsive Single Page Application (SPA) with reusable components and dynamic user interfaces. The backend is implemented using Django and Django REST Framework (DRF), exposing secure RESTful APIs that communicate with the frontend through JSON-based requests and responses.
+
+Authentication and authorization are implemented using JSON Web Tokens (JWT), ensuring secure access to protected resources. The application further integrates external services such as the Groq API for AI-powered interview assistance, the Kontests API for contest synchronization, and a local code execution environment for evaluating programming solutions.
+
+This chapter presents the implementation details of the major software modules developed for PrepSmart, together with the corresponding workflows and interactions among various system components.
+
+\section{Technology Stack}
+
+The development of PrepSmart involved multiple technologies, frameworks, libraries, and development tools. Each technology was selected based on its performance, scalability, community support, and compatibility with the overall system architecture. The combination of these technologies enabled the development of a secure, modular, and interactive placement preparation platform.
+
+Table~\ref{tab:technology_stack} summarizes the technologies used during the development of the proposed system.
+
+\begin{table}[H]
+\centering
+\caption{Technology Stack Used in PrepSmart}
+\label{tab:technology_stack}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{|p{4cm}|p{4cm}|p{7cm}|}
+\hline
+\textbf{Category} & \textbf{Technology} & \textbf{Purpose} \\
+\hline
+
+Programming Language & Python & Backend development and business logic implementation. \\
+\hline
+
+Programming Language & JavaScript (ES6+) & Frontend development and client-side interactivity. \\
+\hline
+
+Frontend Framework & React (Vite) & Development of the Single Page Application (SPA). \\
+\hline
+
+Backend Framework & Django & Backend application development. \\
+\hline
+
+REST Framework & Django REST Framework (DRF) & Development of secure REST APIs. \\
+\hline
+
+Authentication & JSON Web Token (JWT) & Secure authentication and authorization. \\
+\hline
+
+Database & MySQL & Persistent storage of application data. \\
+\hline
+
+ORM & Django ORM & Database abstraction and model management. \\
+\hline
+
+AI Integration & Groq API & AI interview evaluation and intelligent explanations. \\
+\hline
+
+Contest Integration & Kontests API & Synchronization of coding contests. \\
+\hline
+
+Version Control & Git and GitHub & Source code management and collaboration. \\
+\hline
+
+API Testing & Postman & Testing REST API endpoints. \\
+\hline
+
+Development Environment & Visual Studio Code & Source code editing and debugging. \\
+\hline
+
+Code Execution & Local Subprocess Runtime & Compilation and execution of programming solutions. \\
+\hline
+
+Deployment Support & Django Static and Media Files & Management of static assets and uploaded content. \\
+\hline
+
+\end{tabular}
+\end{table}
+
+The selected technology stack provides a balanced combination of performance, scalability, maintainability, and ease of development. React enables the development of reusable user interface components, while Django and Django REST Framework provide a robust backend capable of handling authentication, business logic, and RESTful communication. Django ORM simplifies database interactions by mapping Python objects to relational database tables.
+
+External integrations such as the Groq API and Kontests API extend the capabilities of the platform by providing AI-assisted interview functionality and real-time programming contest information. Development tools including Git, GitHub, Visual Studio Code, and Postman improve software development efficiency, version control, debugging, and API testing throughout the project lifecycle.
+
+\section{Development Environment}
+
+The development of PrepSmart was carried out using a modern full-stack web development environment. The project was implemented following a modular architecture with separate frontend and backend applications. Industry-standard development tools were used for coding, debugging, version control, API testing, and database management to ensure efficient software development.
+
+The frontend application was developed using React with Vite, while the backend services were implemented using Django and Django REST Framework (DRF). Communication between the frontend and backend was achieved through RESTful APIs using JSON as the data exchange format. The database was managed using MySQL through Django ORM, providing secure and efficient data persistence.
+
+Table~\ref{tab:development_environment} summarizes the software environment used during the implementation of PrepSmart.
+
+\begin{table}[H]
+\centering
+\caption{Development Environment of PrepSmart}
+\label{tab:development_environment}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|p{5cm}|p{4cm}|p{6cm}|}
+\hline
+\textbf{Component} & \textbf{Software} & \textbf{Purpose} \\
+\hline
+
+Operating System & Windows 11 & Development and testing environment. \\
+\hline
+
+Code Editor & Visual Studio Code & Source code development and debugging. \\
+\hline
+
+Backend Language & Python 3.x & Backend programming. \\
+\hline
+
+Frontend Language & JavaScript (ES6+) & Client-side application development. \\
+\hline
+
+Backend Framework & Django & Server-side application development. \\
+\hline
+
+REST Framework & Django REST Framework & REST API development. \\
+\hline
+
+Frontend Framework & React (Vite) & Single Page Application development. \\
+\hline
+
+Database & MySQL & Data storage and management. \\
+\hline
+
+Version Control & Git & Source code version management. \\
+\hline
+
+Repository Hosting & GitHub & Source code hosting and collaboration. \\
+\hline
+
+API Testing & Postman & Testing backend REST APIs. \\
+\hline
+
+Web Browser & Google Chrome & Frontend testing and debugging. \\
+\hline
+
+Package Manager & npm & Frontend dependency management. \\
+\hline
+
+Backend Package Manager & pip & Python package management. \\
+\hline
+
+\end{tabular}
+\end{table}
+
+The selected development environment provided a reliable and efficient platform for implementing the proposed system. Visual Studio Code served as the primary Integrated Development Environment (IDE), offering debugging support, intelligent code completion, and extension-based development features.
+
+Git and GitHub were used for source code version control, enabling systematic project management and tracking of code changes throughout the development lifecycle. Postman was extensively used to verify the correctness of REST API endpoints before integrating them with the React frontend.
+
+The React development server provided rapid frontend updates during implementation, while Django's built-in development server handled backend processing and API execution. MySQL, integrated through Django ORM, managed persistent application data efficiently without requiring manual SQL query implementation.
+
+Overall, the chosen development environment supported rapid development, simplified debugging, improved code quality, and ensured smooth integration between different software components.
+
+\section{Frontend Implementation}
+
+The frontend of PrepSmart has been developed using React with Vite to provide a modern, responsive, and interactive Single Page Application (SPA). The frontend is responsible for presenting the user interface, handling user interactions, communicating with backend services through REST APIs, and dynamically updating application content without requiring complete page reloads.
+
+The application follows a component-based architecture in which individual user interface elements are implemented as reusable React components. This modular approach improves maintainability, code reusability, and simplifies future feature enhancements.
+
+Figure~\ref{fig:react_architecture} illustrates the frontend architecture of the PrepSmart platform.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Media/Chapter 4/2 React Component Architecture.jpg}
+\caption{React Component Architecture of PrepSmart}
+\label{fig:react_architecture}
+\end{figure}
+
+The React application is organized around a hierarchical component structure that separates application initialization, routing, layout management, reusable components, and API communication into independent modules.
+
+The application execution begins from the App component, which acts as the entry point of the frontend application. The App component initializes the global providers, configures routing, and renders the major modules of the application.
+
+Global state management is handled through the ThemeProvider and AuthProvider components. ThemeProvider maintains the application's appearance settings, including light and dark themes, while AuthProvider manages authentication state, user information, access tokens, and session persistence throughout the application.
+
+Navigation within the application is implemented using BrowserRouter. Instead of loading separate HTML pages, BrowserRouter dynamically renders React components according to the current URL, thereby providing a seamless Single Page Application experience.
+
+The Layout component provides a consistent user interface across different pages by managing the navigation bar, sidebar, footer, and common interface elements. Individual pages such as Dashboard, Learning Modules, Coding Practice, Interview Preparation, Company Readiness, Portfolio Management, and Profile Management are rendered within this layout.
+
+Reusable UI components are organized separately from page-level components. These reusable components include cards, buttons, forms, charts, dialogs, tables, progress indicators, and visualization widgets that are shared across multiple pages, reducing code duplication and improving consistency.
+
+Communication with the backend is centralized through the API Client module. Instead of making HTTP requests directly from individual pages, all API interactions are performed through a common client that automatically attaches authentication tokens, processes server responses, and handles error conditions consistently.
+
+Application-wide state management is further supported through React Contexts and Stores. These modules maintain shared application data such as authentication status, dashboard information, user preferences, and placement preparation progress without requiring excessive component-to-component communication.
+
+The frontend also integrates an AI Assistant component that provides intelligent assistance and interacts with backend AI services whenever supported functionality is available.
+
+\subsection{Advantages of the Frontend Architecture}
+
+The frontend architecture adopted in PrepSmart offers several advantages.
+
+\begin{itemize}
+
+\item Component-based development improves code reusability.
+
+\item Single Page Application architecture provides faster navigation.
+
+\item Centralized API communication simplifies backend integration.
+
+\item Context Providers enable efficient global state management.
+
+\item Reusable UI components improve maintainability.
+
+\item Modular organization facilitates future feature expansion.
+
+\item Dynamic rendering enhances user experience without full page reloads.
+
+\end{itemize}
+
+\section{Backend Implementation}
+
+The backend of PrepSmart has been developed using Django and Django REST Framework (DRF), following a modular architecture that separates authentication, business logic, database operations, and API communication into independent components. The backend serves as the central processing unit of the platform by handling client requests, validating user permissions, executing application logic, interacting with the database, and generating structured JSON responses.
+
+RESTful APIs are used as the communication mechanism between the React frontend and the Django backend. Each client request passes through authentication and validation before the corresponding business logic is executed. This architecture improves security, maintainability, and scalability while supporting efficient interaction between the frontend and backend.
+
+Figure~\ref{fig:api_request_flow} illustrates the request processing workflow adopted in PrepSmart.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Media/Chapter 4/7 API Request Flow.jpg}
+\caption{API Request Flow in PrepSmart}
+\label{fig:api_request_flow}
+\end{figure}
+
+The API request processing begins when a user performs an action through the React frontend, such as logging into the system, starting a mock test, submitting code, or viewing dashboard statistics. The frontend sends an HTTP request through the centralized API Client using the appropriate REST endpoint.
+
+The API Client automatically attaches the required HTTP headers, including the JSON Web Token (JWT) for authenticated requests. This ensures that protected resources are accessible only to authorized users.
+
+The request is received by Django REST Framework, where authentication and permission checks are performed before forwarding the request to the appropriate API View. Each API View is responsible for processing a specific functionality of the platform, such as user authentication, topic management, coding practice, interview sessions, or dashboard analytics.
+
+The API View interacts with Django ORM to retrieve or update application data stored in the relational database. Business rules, validation logic, and data processing are executed within the backend before generating the response.
+
+Once processing is complete, the backend returns a structured JSON response containing the requested information or the execution result. The React frontend receives this response and dynamically updates the user interface without requiring a complete page refresh, thereby providing a responsive and seamless user experience.
+
+\subsection{API Request Processing Workflow}
+
+The request handling mechanism followed by PrepSmart consists of the following sequential steps:
+
+\begin{enumerate}
+
+\item The user performs an operation through the React web interface.
+
+\item The API Client generates an HTTP request and attaches the necessary authentication headers.
+
+\item Django REST Framework authenticates the request using JSON Web Tokens (JWT).
+
+\item The request is forwarded to the corresponding API View.
+
+\item The API View executes the required business logic.
+
+\item Django ORM performs the required database operations.
+
+\item The processed result is converted into a JSON response.
+
+\item The frontend receives the response and updates the user interface dynamically.
+
+\end{enumerate}
+
+\subsection{Advantages of the Backend Architecture}
+
+The backend implementation adopted in PrepSmart provides several advantages.
+
+\begin{itemize}
+
+\item Modular organization of backend services.
+
+\item Secure RESTful communication using JWT authentication.
+
+\item Efficient database interaction through Django ORM.
+
+\item Separation of business logic from presentation logic.
+
+\item Standardized JSON-based API communication.
+
+\item Improved scalability through independent backend modules.
+
+\item Easy integration with external APIs and AI services.
+
+\end{itemize}
 
 \section{Authentication Module}
 
-The authentication module is responsible for managing user access to the system. It includes functionalities such as user registration (signup) and login.
+Authentication is a fundamental component of the PrepSmart platform, ensuring that only authorized users can access protected resources and personalized placement preparation features. The system implements token-based authentication using JSON Web Tokens (JWT), providing a secure and scalable mechanism for user verification and session management.
 
-\vspace{0.2cm}
+The authentication module supports user registration, login, session validation, token refresh, and logout operations. Upon successful authentication, the backend generates an access token and a refresh token, which are securely managed by the frontend to maintain user sessions.
 
-During registration, users provide details such as name, email, password, academic information, and target role. These details are securely stored in the database.
-
-\vspace{0.2cm}
-
-For login, users enter their credentials, which are validated by the backend. Upon successful authentication, a \textbf{JSON Web Token (JWT)} is generated and sent to the frontend. This token is used for secure communication in subsequent requests.
-
-\vspace{0.2cm}
-
-The authentication system ensures data security, prevents unauthorized access, and maintains session integrity.
+Figure~\ref{fig:authentication_sequence} illustrates the authentication workflow implemented in PrepSmart.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/1.png}
-    \caption{Login Page.}
-    \label{fig:login_page}
+\centering
+\includegraphics[width=0.83\textwidth]{Media/Chapter 4/9 Authentication Sequence.jpg}
+\caption{Authentication Sequence Diagram of PrepSmart}
+\label{fig:authentication_sequence}
 \end{figure}
+
+The authentication process begins when a user submits valid login credentials through the React frontend. The Auth Context forwards the credentials to the centralized API Client, which sends an authenticated HTTP POST request to the login endpoint exposed by Django REST Framework.
+
+The backend verifies the supplied credentials against the stored user information in the database. If the credentials are valid, Django generates a JSON Web Token (JWT) pair consisting of an access token and a refresh token. Along with these tokens, the authenticated user's profile information is returned to the frontend.
+
+The React application stores the received tokens securely in the browser's local storage and updates the authentication context with the logged-in user's information. Once authentication is successful, the user is redirected to the protected areas of the platform such as the dashboard, learning modules, coding workspace, and interview preparation pages.
+
+Whenever the application starts, the frontend checks whether a valid user session already exists by requesting the session endpoint. If the access token is still valid, the backend returns the authenticated user's information and restores the session without requiring the user to log in again.
+
+If an access token expires during API communication, the backend responds with an unauthorized status code. The API Client automatically sends the stored refresh token to the token refresh endpoint, receives a new access token, updates local storage, and retries the original request. This automatic refresh mechanism provides a seamless user experience while maintaining secure authentication throughout the application.
+
+\subsection{Authentication Workflow}
+
+The authentication mechanism implemented in PrepSmart follows the sequence below.
+
+\begin{enumerate}
+
+\item The user enters login credentials.
+
+\item The frontend sends the credentials to the authentication API.
+
+\item Django verifies the credentials using the user database.
+
+\item A JWT access token and refresh token are generated.
+
+\item Both tokens are returned to the frontend.
+
+\item The frontend stores the tokens securely in local storage.
+
+\item Protected API requests include the access token in the Authorization header.
+
+\item If the access token expires, the refresh token is used to obtain a new access token.
+
+\item The original API request is automatically retried without requiring the user to log in again.
+
+\end{enumerate}
+
+\subsection{Security Features}
+
+The authentication module incorporates several security mechanisms to protect user accounts and application resources.
+
+\begin{itemize}
+
+\item Token-based authentication using JSON Web Tokens (JWT).
+
+\item Secure separation of access tokens and refresh tokens.
+
+\item Authentication of every protected API endpoint.
+
+\item Automatic token refresh without interrupting the user session.
+
+\item Prevention of unauthorized access through backend permission checks.
+
+\item Session restoration after successful token validation.
+
+\item Centralized authentication management using React Context.
+
+\end{itemize}
+
+\subsection{Advantages of the Authentication Module}
+
+The implemented authentication mechanism provides several advantages.
+
+\begin{itemize}
+
+\item Secure user authentication.
+
+\item Stateless communication between frontend and backend.
+
+\item Reduced server-side session management.
+
+\item Improved scalability for multiple concurrent users.
+
+\item Seamless user experience through automatic token refresh.
+
+\item Simplified integration with RESTful APIs.
+
+\end{itemize}
+
+\section{Placement Preparation Module}
+
+The Placement Preparation Module forms the core functionality of the PrepSmart platform. It provides students with a structured learning journey that organizes placement preparation into tracks, topics, quizzes, coding exercises, and progress monitoring. The objective of this module is to guide students through a systematic learning process instead of relying on fragmented preparation across multiple platforms.
+
+The module continuously records user activities, evaluates learning progress, and updates completion status after every learning activity. This enables students to monitor their preparation while allowing the system to generate personalized recommendations and readiness analytics.
+
+Figure~\ref{fig:prep_journey} illustrates the workflow of the Placement Preparation Module.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/2.png}
-    \caption{Signup Page.}
-    \label{fig:signup_page}
+\centering
+\includegraphics[width=\textwidth]{Media/Chapter 4/11 Preparation Journey Workflow.jpg}
+\caption{Placement Preparation Workflow}
+\label{fig:prep_journey}
 \end{figure}
 
-\section{Dashboard Module}
+The placement preparation process begins when an authenticated student selects a learning track or topic from the frontend interface. The request is forwarded to the backend through the centralized API client, where the corresponding API endpoints process the request and retrieve the required learning content.
 
-The dashboard provides an overview of the user’s placement preparation progress. It displays key metrics such as placement readiness, problems solved, day streak, and accuracy.
+When a student completes a topic, the frontend sends a completion request to the backend. The backend verifies the authenticated user, retrieves the selected topic, and updates the corresponding learning progress record in the database. If the topic is being completed for the first time, the system creates a new progress entry and records the completion timestamp.
 
-\vspace{0.2cm}
+After completing the theoretical content, students attempt the topic quiz. Quiz responses are submitted to the backend, where each answer is evaluated against the stored correct answers. The backend calculates the student's accuracy and stores the result in the database. If the obtained score satisfies the predefined completion criteria, the corresponding topic is automatically marked as completed.
 
-It also includes sections like daily plans, company readiness, learning tracks, and recent activity. These components are dynamically updated based on user performance.
+Every completed learning activity is recorded as an activity event, allowing the dashboard and analytics module to generate progress reports, calculate completion percentages, and recommend subsequent learning topics. This automated workflow ensures that students follow a structured placement preparation path while continuously tracking their overall readiness.
 
-\vspace{0.2cm}
+\subsection{Placement Preparation Workflow}
 
-The dashboard helps users monitor their progress and stay focused on their preparation goals.
+The Placement Preparation Module follows the workflow below.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/dash.png}
-    \caption{Dashboard Page - Overview}
-    \label{fig:dashboard_1}
-\end{figure}
+\begin{enumerate}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/dash2.png}
-    \caption{Dashboard Page - Activity.}
-    \label{fig:dashboard_2}
-\end{figure}
+\item The student selects a learning track.
 
-\section{Learning Path Module}
+\item The frontend requests the corresponding learning topics.
 
-The learning path module provides structured topic-wise preparation. It organizes content into tracks such as aptitude, data structures, databases, and web development.
+\item The backend retrieves topic information from the database.
 
-\vspace{0.2cm}
+\item The student studies the selected topic.
 
-Each track consists of multiple topics with progress indicators, allowing users to follow a systematic preparation plan. The system also highlights weak areas and suggests focus topics.
+\item The student marks the topic as completed.
 
-\vspace{0.2cm}
+\item The backend updates the UserTopicProgress table.
 
-This module ensures a structured and goal-oriented learning experience.
+\item The student attempts the topic quiz.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/lp.png}
-    \caption{Learning Path Page - Tracks.}
-    \label{fig:learning_path_1}
-\end{figure}
+\item The backend evaluates quiz responses.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/lp1.png}
-    \caption{Learning Path Page - Topics.}
-    \label{fig:learning_path_2}
-\end{figure}
+\item Progress statistics are updated.
 
-\section{Practice Module}
+\item Dashboard analytics are refreshed automatically.
 
-The practice module allows users to solve topic-wise questions and improve their problem-solving skills. It provides recommended questions based on weak areas and performance.
+\end{enumerate}
 
-\vspace{0.2cm}
+\subsection{Major Features}
 
-Users can track their accuracy, number of questions solved, and progress in different topics. The system categorizes questions into different domains for better organization.
+The Placement Preparation Module provides the following features.
 
-\vspace{0.2cm}
+\begin{itemize}
 
-This module helps users strengthen their fundamentals through consistent practice.
+\item Structured learning tracks.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/p1.png}
-    \caption{Practice Page - Domains.}
-    \label{fig:practice_1}
-\end{figure}
+\item Topic-wise study materials.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/p2.png}
-    \caption{Practice Page - Questions.}
-    \label{fig:practice_2}
-\end{figure}
+\item Quiz-based assessment.
 
-\section{Mock Test Module}
+\item Automatic progress tracking.
 
-The mock test module simulates real placement tests by providing timed assessments. It includes multiple sections such as aptitude, technical questions, and coding problems.
+\item Activity logging.
 
-\vspace{0.2cm}
+\item Personalized learning journey.
 
-The system automatically evaluates user responses and provides scores and feedback. It also maintains test history for performance tracking.
+\item Readiness score calculation.
 
-\vspace{0.2cm}
+\item Integration with dashboard analytics.
 
-This module helps users prepare under exam-like conditions and improve time management skills.
+\end{itemize}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/m1.png}
-    \caption{Mock Test Page - Instructions.}
-    \label{fig:mock_test_1}
-\end{figure}
+\subsection{Advantages of the Placement Preparation Module}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/m2.png}
-    \caption{Mock Test Page - Active Assessment.}
-    \label{fig:mock_test_2}
-\end{figure}
+The implemented module offers several advantages.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/m3.png}
-    \caption{Mock Test Page - Results.}
-    \label{fig:mock_test_3}
-\end{figure}
+\begin{itemize}
 
-\section{Code Editor Module}
+\item Organizes placement preparation into structured learning paths.
 
-The code editor module provides a real-time coding environment for solving programming problems. It supports Python execution and allows users to input custom test cases.
+\item Eliminates fragmented learning across multiple platforms.
 
-\vspace{0.2cm}
+\item Automatically tracks student progress.
 
-The backend processes the code and returns the output, execution time, and errors if any. This helps users test their solutions instantly.
+\item Provides continuous assessment through quizzes.
 
-\vspace{0.2cm}
+\item Enables personalized learning recommendations.
 
-The module enhances coding practice by providing an integrated execution environment.
+\item Supports future expansion with additional learning tracks.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/code.png}
-    \caption{Code Editor Page.}
-    \label{fig:code_editor}
-\end{figure}
+\end{itemize}
 
-\section{AI Interview Module}
-
-The AI Interview module simulates real interview scenarios by presenting users with questions related to technical and behavioral topics.
-
-\vspace{0.2cm}
-
-Users can type their responses, which are evaluated based on predefined criteria. This helps improve communication skills and confidence.
-
-\vspace{0.2cm}
-
-The module bridges the gap between preparation and real interview experience.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/ai1.png}
-    \caption{AI Interview Page - Setup.}
-    \label{fig:ai_interview_1}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/ai2.png}
-    \caption{AI Interview Page - Session.}
-    \label{fig:ai_interview_2}
-\end{figure}
-
-\section{Analytics Module}
-
-The analytics module provides detailed insights into user performance. It displays metrics such as accuracy, total attempts, topic-wise performance, and weak areas.
-
-\vspace{0.2cm}
-
-Graphs and charts are used to visualize progress over time. This helps users identify areas for improvement and adjust their preparation strategy.
-
-\vspace{0.2cm}
-
-The analytics system is powered by backend computations and database-driven insights.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/ana.png}
-    \caption{Analytics Page.}
-    \label{fig:analytics}
-\end{figure}
-
-\section{Company Readiness Module}
-
-The company readiness module helps users track their preparation for specific companies. It provides details such as required skills, roles, and readiness percentage.
-
-\vspace{0.2cm}
-
-Users can monitor their progress for each company and focus on areas that need improvement.
-
-\vspace{0.2cm}
-
-This module aligns preparation with real-world company requirements.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/com.png}
-    \caption{Company Readiness Page.}
-    \label{fig:company_readiness}
-\end{figure}

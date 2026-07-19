@@ -3,42 +3,78 @@
 \contentsline {chapter}{Declaration}{iii}{section*.3}%
 \contentsline {chapter}{Acknowledgements}{iv}{section*.4}%
 \contentsline {chapter}{Abstract}{v}{section*.5}%
-\contentsline {chapter}{List of Abbreviations and Acronyms}{vii}{section*.8}%
-\contentsline {chapter}{List of Figures}{ix}{section*.9}%
-\contentsline {chapter}{List of Tables}{ix}{chapter*.10}%
+\contentsline {chapter}{List of Abbreviations and Acronyms}{viii}{section*.8}%
+\contentsline {chapter}{List of Figures}{x}{section*.9}%
+\contentsline {chapter}{List of Tables}{x}{chapter*.10}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problem Statement}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Objectives}{2}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Scope of the Project}{3}{section.1.4}%
-\contentsline {chapter}{\numberline {2}System Architecture}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Overview}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}System Architecture Diagram}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Architecture Explanation}{5}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Data Flow}{6}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Data Flow Explanation}{7}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Technologies Used}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Overview}{8}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Frontend Technologies}{8}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Backend Technologies}{9}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Database}{9}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Other Tools And Technologies}{9}{section.3.5}%
-\contentsline {chapter}{\numberline {4}System Implementation}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Authentication Module}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Dashboard Module}{12}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Learning Path Module}{14}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Practice Module}{17}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Mock Test Module}{18}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Code Editor Module}{20}{section.4.6}%
-\contentsline {section}{\numberline {4.7}AI Interview Module}{21}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Analytics Module}{22}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Company Readiness Module}{23}{section.4.9}%
-\contentsline {chapter}{\numberline {5}Results And Discussion}{25}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Results}{25}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Discussion}{26}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Limitations And Future Work}{27}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Limitations}{27}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Future Work}{28}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Conclusion}{29}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Conclusion}{29}{section.7.1}%
-\contentsline {chapter}{References}{30}{section*.31}%
+\contentsline {section}{\numberline {1.3}Objectives}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Scope of the Project}{4}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Proposed Methodology}{5}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Organization of the Report}{6}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Literature Survey}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Review of Existing Placement Preparation Platforms}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}LeetCode}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}HackerRank}{8}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}GeeksforGeeks}{9}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}InterviewBit}{9}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}LinkedIn Learning}{9}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Comparative Analysis of Existing Platforms}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Research Gap}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Chapter Summary}{11}{section.2.5}%
+\contentsline {chapter}{\numberline {3}System Analysis and Design}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Requirement Analysis}{12}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Functional Requirements}{13}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Non-Functional Requirements}{14}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Feasibility Study}{15}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Technical Feasibility}{15}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Economic Feasibility}{16}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Operational Feasibility}{16}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Overall System Architecture}{16}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Five-Layer Software Architecture}{18}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Presentation Layer}{19}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}API Layer}{19}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Business Logic Layer}{19}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Data Access Layer}{19}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}External Service Layer}{19}{subsection.3.5.5}%
+\contentsline {section}{\numberline {3.6}High-Level Software Architecture}{20}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Client Layer}{21}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Backend Layer}{22}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Data Layer}{22}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}External Service Layer}{22}{subsection.3.6.4}%
+\contentsline {section}{\numberline {3.7}Use Case Diagram}{23}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Guest User}{25}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Student User}{25}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Administrator}{25}{subsection.3.7.3}%
+\contentsline {section}{\numberline {3.8}Data Flow Diagram}{26}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Working of the Data Flow}{27}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Advantages of the Data Flow Design}{28}{subsection.3.8.2}%
+\contentsline {section}{\numberline {3.9}Class Diagram}{28}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Advantages of the Class Design}{31}{subsection.3.9.1}%
+\contentsline {section}{\numberline {3.10}Database Design}{31}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Major Database Entities}{32}{subsection.3.10.1}%
+\contentsline {subsection}{\numberline {3.10.2}Relationship Between Entities}{33}{subsection.3.10.2}%
+\contentsline {subsection}{\numberline {3.10.3}Database Features}{33}{subsection.3.10.3}%
+\contentsline {subsection}{\numberline {3.10.4}Advantages of the Database Design}{34}{subsection.3.10.4}%
+\contentsline {section}{\numberline {3.11}Chapter Summary}{34}{section.3.11}%
+\contentsline {chapter}{\numberline {4}System Development and Implementation}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{35}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Technology Stack}{36}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Development Environment}{37}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Frontend Implementation}{39}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Advantages of the Frontend Architecture}{40}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Backend Implementation}{41}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}API Request Processing Workflow}{42}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Advantages of the Backend Architecture}{42}{subsection.4.5.2}%
+\contentsline {section}{\numberline {4.6}Authentication Module}{43}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Authentication Workflow}{44}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Security Features}{45}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Advantages of the Authentication Module}{45}{subsection.4.6.3}%
+\contentsline {section}{\numberline {4.7}Placement Preparation Module}{46}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Placement Preparation Workflow}{47}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Major Features}{47}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Advantages of the Placement Preparation Module}{48}{subsection.4.7.3}%
+\contentsline {chapter}{References}{49}{section*.28}%
