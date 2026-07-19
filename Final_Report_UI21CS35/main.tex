@@ -1,0 +1,138 @@
+\documentclass[dvipsnames,12pt]{report}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{subfig}
+\usepackage{lscape}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[document]{ragged2e}
+\usepackage{titlesec}
+\titleformat{\section}[hang]{\normalfont\Large\bfseries\raggedright}{\thesection}{1em}{}
+\titleformat{\subsection}[hang]{\normalfont\large\bfseries\raggedright}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}[hang]{\normalfont\normalsize\bfseries\raggedright}{\thesubsubsection}{1em}{}
+\usepackage{tikz}
+\usepackage{dirtytalk}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{datetime}
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+\usepackage[english]{babel}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage{epstopdf}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\pagestyle{fancy}
+\raggedbottom
+\fancyhead{}
+\bibliographystyle{IEEEtran}
+
+%% --- Page dimensions (updated for equal top & bottom margins) ---
+\usepackage[a4paper, top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
+
+%% --- Spacing ---
+\setstretch{1}
+\setlength{\parskip}{3pt plus 1pt minus 1pt}
+\setlength{\parindent}{0pt}
+
+%% --- Table row height ---
+\renewcommand{\arraystretch}{1.2}
+
+%% --- Student / project details ---
+\def\mytitle{SMART PLACEMENT PREPARATION PLATFORM (PREPSMART)}
+\def\myname{Mala Neeraj Srinivas}
+\def\mydegree{Computer Science and Engineering}
+\def\mysupervisor{Dr. Kaustubh Dhondge}
+\def\myexaminer{Dr. Reema Patel}
+\def\myindustrysupervisor{Akhilesh Reddy Karra}
+\def\myrollno{UI21CSC35}
+\def\mydep{Computer Science and Engineering}
+\def\mydegreedate{5\textsuperscript{th} May, 2026}
+\def\myorganisation{Architect - Application (AuroPro Soft Systems Pvt Ltd), Hyderabad}
+
+\setlength{\marginparwidth}{2cm}
+
+\begin{document}
+    \setlength{\parindent}{0pt}
+    \baselineskip=18pt plus1pt
+    \setcounter{secnumdepth}{3}
+    \setcounter{tocdepth}{3}
+    \pagenumbering{roman}
+
+    \include{./Formalities/title_page}
+
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Certificate}
+    \include{./Formalities/certificate}
+
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Declaration}
+    \include{./Formalities/certificate_of_approval}
+
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Acknowledgements}
+    \include{./Formalities/acknowledgements}
+
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Abstract}
+    \include{./Formalities/abstract}
+
+    \phantomsection
+    \tableofcontents
+    \protect
+
+    \phantomsection
+    \addcontentsline{toc}{chapter}{List of Abbreviations and Acronyms}
+    \include{./Formalities/acronyms}
+
+    \phantomsection
+    \addcontentsline{toc}{chapter}{List of Figures}
+    \listoffigures
+
+    \addcontentsline{toc}{chapter}{List of Tables}
+    \listoftables
+
+    \clearpage
+    \pagenumbering{arabic}
+
+    \include{Chapters/chap_1}
+    \include{Chapters/chap_2}
+    \include{Chapters/chap_3}
+    \include{Chapters/chap_4}
+    \include{Chapters/chap_5}
+    \include{Chapters/chap_6}
+    \include{Chapters/chap_7}
+
+    \renewcommand{\bibname}{References}
+    \newpage
+    \phantomsection
+    \addcontentsline{toc}{chapter}{References}
+    \include{references}
+
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Supervisor Evaluation of Intern}
+
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Student Feedback of Internship}
+
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Plagiarism Report}
+
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Daily Logs}
+
+\end{document}

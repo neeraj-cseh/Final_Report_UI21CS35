@@ -1,0 +1,103 @@
+\chapter{System Architecture}
+
+\section{Overview}
+
+The \textbf{PrepSmart platform} follows a \textbf{client-server architecture}, where the frontend and backend operate as separate layers and communicate through well-defined APIs. This separation ensures \textbf{modularity, scalability, and maintainability} of the system.
+
+\vspace{0.2cm}
+
+The frontend is developed using \textbf{React}, which provides an interactive and dynamic user interface. It handles user interactions, displays data, and communicates with the backend using HTTP requests.
+
+\vspace{0.2cm}
+
+The backend is implemented using \textbf{Django REST Framework (DRF)}, which exposes RESTful APIs to manage application logic, handle requests, and process data. The backend is responsible for authentication, business logic, analytics computation, and database operations.
+
+\vspace{0.2cm}
+
+The system uses \textbf{MySQL} as the database for storing user data, learning content, test results, and analytics. Secure communication is ensured through \textbf{JSON Web Tokens (JWT)}, which handle user authentication and authorization.
+
+\vspace{0.2cm}
+
+Additionally, the platform includes a \textbf{local Python execution engine} that allows users to write and execute code within the system. The backend processes code execution requests and returns outputs to the frontend.
+
+\vspace{0.2cm}
+
+This architecture ensures efficient communication between components and supports future scalability, including cloud deployment and microservices-based expansion.
+
+\section{System Architecture Diagram}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 2/2.1.png}
+    \caption{System Architecture of PrepSmart Platform}
+    \label{fig:sys_arch}
+\end{figure}
+
+The system architecture of the \textbf{PrepSmart platform} follows a client-server model. The user interacts with the frontend developed using \textbf{React}, which sends requests to the backend via \textbf{REST APIs}. The backend, built using \textbf{Django REST Framework}, processes these requests, performs business logic, and communicates with the \textbf{MySQL} database for data storage and retrieval.
+
+\vspace{0.2cm}
+
+The system also includes a \textbf{Python-based code execution engine}, which allows users to execute code in real-time. Authentication is handled securely using \textbf{JSON Web Tokens (JWT)}, ensuring protected access to system resources. This modular architecture ensures scalability, maintainability, and efficient data flow across the platform.
+
+\section{Architecture Explanation}
+
+The architecture of the PrepSmart platform consists of three major components: \textbf{Frontend, Backend,} and \textbf{Database}.
+
+\begin{enumerate}
+    \item \textbf{Frontend Layer (React):}\\
+    This layer provides the user interface and handles all user interactions. It includes modules such as login/signup, dashboard, learning modules, mock tests, code editor, and analytics. The frontend communicates with the backend through REST APIs.
+
+    \item \textbf{Backend Layer (Django REST Framework):}\\
+    The backend manages application logic, processes requests, and controls data flow. It includes authentication services using JWT, API endpoints for various modules, and analytics computation. The backend ensures secure and efficient communication between frontend and database.
+
+    \item \textbf{Code Execution Engine:}\\
+    The platform includes a local Python execution environment that processes code submitted by users. The backend executes the code and returns the output to the frontend in real-time.
+
+    \item \textbf{Authentication System:}\\
+    Secure access is provided through JSON Web Tokens (JWT), which authenticate users and manage sessions without storing sensitive data on the server.
+\end{enumerate}
+
+\vspace{0.2cm}
+
+The interaction between these components ensures smooth data flow, efficient processing, and a seamless user experience.
+
+\section{Data Flow}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 2/2.2.png}
+    \caption{Data Flow Diagram of PrepSmart Platform}
+    \label{fig:data_flow}
+\end{figure}
+
+The data flow in the PrepSmart platform begins with user interactions such as login, practice attempts, or test submissions. These actions are captured by the frontend and sent to the backend through API requests.
+
+\vspace{0.2cm}
+
+The backend processes the request, validates the data, and interacts with the database to store or retrieve relevant information. In the case of coding problems, the backend forwards the code to the Python execution engine and retrieves the output.
+
+\vspace{0.2cm}
+
+The processed data is then sent back to the frontend, where it is displayed to the user. This structured data flow ensures real-time interaction, efficient processing, and accurate performance tracking.
+
+\section{Data Flow Explanation}
+
+The data flow in the PrepSmart platform follows a structured process that ensures efficient communication between system components.
+
+\vspace{0.2cm}
+
+When a user interacts with the frontend, such as logging in, attempting a test, or executing code, a request is sent to the backend via API calls. The backend processes the request, performs necessary computations or validations, and interacts with the database if required.
+
+\vspace{0.2cm}
+
+For example, during authentication, user credentials are verified, and a JWT token is generated. In the case of coding practice, the submitted code is sent to the backend, executed in the Python environment, and the output is returned to the frontend.
+
+\vspace{0.2cm}
+
+Similarly, analytics data is computed in the backend based on user performance and stored in the database. This data is then fetched and displayed on the dashboard.
+
+\vspace{0.2cm}
+
+This structured data flow ensures reliability, scalability, and real-time feedback for users.
+
+\newpage

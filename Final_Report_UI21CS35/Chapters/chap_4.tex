@@ -1,0 +1,225 @@
+\chapter{System Implementation}
+
+\section{Authentication Module}
+
+The authentication module is responsible for managing user access to the system. It includes functionalities such as user registration (signup) and login.
+
+\vspace{0.2cm}
+
+During registration, users provide details such as name, email, password, academic information, and target role. These details are securely stored in the database.
+
+\vspace{0.2cm}
+
+For login, users enter their credentials, which are validated by the backend. Upon successful authentication, a \textbf{JSON Web Token (JWT)} is generated and sent to the frontend. This token is used for secure communication in subsequent requests.
+
+\vspace{0.2cm}
+
+The authentication system ensures data security, prevents unauthorized access, and maintains session integrity.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/1.png}
+    \caption{Login Page.}
+    \label{fig:login_page}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/2.png}
+    \caption{Signup Page.}
+    \label{fig:signup_page}
+\end{figure}
+
+\section{Dashboard Module}
+
+The dashboard provides an overview of the user’s placement preparation progress. It displays key metrics such as placement readiness, problems solved, day streak, and accuracy.
+
+\vspace{0.2cm}
+
+It also includes sections like daily plans, company readiness, learning tracks, and recent activity. These components are dynamically updated based on user performance.
+
+\vspace{0.2cm}
+
+The dashboard helps users monitor their progress and stay focused on their preparation goals.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/dash.png}
+    \caption{Dashboard Page - Overview}
+    \label{fig:dashboard_1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/dash2.png}
+    \caption{Dashboard Page - Activity.}
+    \label{fig:dashboard_2}
+\end{figure}
+
+\section{Learning Path Module}
+
+The learning path module provides structured topic-wise preparation. It organizes content into tracks such as aptitude, data structures, databases, and web development.
+
+\vspace{0.2cm}
+
+Each track consists of multiple topics with progress indicators, allowing users to follow a systematic preparation plan. The system also highlights weak areas and suggests focus topics.
+
+\vspace{0.2cm}
+
+This module ensures a structured and goal-oriented learning experience.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/lp.png}
+    \caption{Learning Path Page - Tracks.}
+    \label{fig:learning_path_1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/lp1.png}
+    \caption{Learning Path Page - Topics.}
+    \label{fig:learning_path_2}
+\end{figure}
+
+\section{Practice Module}
+
+The practice module allows users to solve topic-wise questions and improve their problem-solving skills. It provides recommended questions based on weak areas and performance.
+
+\vspace{0.2cm}
+
+Users can track their accuracy, number of questions solved, and progress in different topics. The system categorizes questions into different domains for better organization.
+
+\vspace{0.2cm}
+
+This module helps users strengthen their fundamentals through consistent practice.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/p1.png}
+    \caption{Practice Page - Domains.}
+    \label{fig:practice_1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/p2.png}
+    \caption{Practice Page - Questions.}
+    \label{fig:practice_2}
+\end{figure}
+
+\section{Mock Test Module}
+
+The mock test module simulates real placement tests by providing timed assessments. It includes multiple sections such as aptitude, technical questions, and coding problems.
+
+\vspace{0.2cm}
+
+The system automatically evaluates user responses and provides scores and feedback. It also maintains test history for performance tracking.
+
+\vspace{0.2cm}
+
+This module helps users prepare under exam-like conditions and improve time management skills.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/m1.png}
+    \caption{Mock Test Page - Instructions.}
+    \label{fig:mock_test_1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/m2.png}
+    \caption{Mock Test Page - Active Assessment.}
+    \label{fig:mock_test_2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/m3.png}
+    \caption{Mock Test Page - Results.}
+    \label{fig:mock_test_3}
+\end{figure}
+
+\section{Code Editor Module}
+
+The code editor module provides a real-time coding environment for solving programming problems. It supports Python execution and allows users to input custom test cases.
+
+\vspace{0.2cm}
+
+The backend processes the code and returns the output, execution time, and errors if any. This helps users test their solutions instantly.
+
+\vspace{0.2cm}
+
+The module enhances coding practice by providing an integrated execution environment.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/code.png}
+    \caption{Code Editor Page.}
+    \label{fig:code_editor}
+\end{figure}
+
+\section{AI Interview Module}
+
+The AI Interview module simulates real interview scenarios by presenting users with questions related to technical and behavioral topics.
+
+\vspace{0.2cm}
+
+Users can type their responses, which are evaluated based on predefined criteria. This helps improve communication skills and confidence.
+
+\vspace{0.2cm}
+
+The module bridges the gap between preparation and real interview experience.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/ai1.png}
+    \caption{AI Interview Page - Setup.}
+    \label{fig:ai_interview_1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/ai2.png}
+    \caption{AI Interview Page - Session.}
+    \label{fig:ai_interview_2}
+\end{figure}
+
+\section{Analytics Module}
+
+The analytics module provides detailed insights into user performance. It displays metrics such as accuracy, total attempts, topic-wise performance, and weak areas.
+
+\vspace{0.2cm}
+
+Graphs and charts are used to visualize progress over time. This helps users identify areas for improvement and adjust their preparation strategy.
+
+\vspace{0.2cm}
+
+The analytics system is powered by backend computations and database-driven insights.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/ana.png}
+    \caption{Analytics Page.}
+    \label{fig:analytics}
+\end{figure}
+
+\section{Company Readiness Module}
+
+The company readiness module helps users track their preparation for specific companies. It provides details such as required skills, roles, and readiness percentage.
+
+\vspace{0.2cm}
+
+Users can monitor their progress for each company and focus on areas that need improvement.
+
+\vspace{0.2cm}
+
+This module aligns preparation with real-world company requirements.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Media/Chapter 4/com.png}
+    \caption{Company Readiness Page.}
+    \label{fig:company_readiness}
+\end{figure}
